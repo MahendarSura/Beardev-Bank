@@ -7,7 +7,7 @@ export default function BeardevBankHomepage() {
     <div className="font-sans text-black bg-white">
       {/* NAVBAR */}
       <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
-        <div className="text-4xl font-extrabold mb-4 md:mb-0" style={{ color: royalMaroon }}>
+        <div className="text-5xl font-extrabold text-Royal Maroon-500">Beardev Learn</div>
           Beardev-Bank
         </div>
         <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base">
