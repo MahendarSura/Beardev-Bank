@@ -1,13 +1,15 @@
 import React from "react";
 
-const royalMaroon = "#800000"; // define your maroon color here
+const royalMaroon = "#800000"; 
 
 function App() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 font-sans">
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
-        <div className="text-5xl font-extrabold text-royalMaroon->Beardev Bank</div>
+        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
+          Beardev Bank
+        </div>
         <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
           <li className="hover:text-red-700 cursor-pointer">Explore products</li>
           <li className="hover:text-red-700 cursor-pointer">Grab Deal</li>
