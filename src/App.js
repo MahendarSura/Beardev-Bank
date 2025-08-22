@@ -5,7 +5,7 @@ function App() {
     <div className="max-w-7xl mx-auto px-6 py-12 font-sans">
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
-        <div className="text-5xl font-extrabold text-maroon-500">Beardev Bank</div>
+        <div className="text-5xl font-extrabold text-royalmaroon-500">Beardev Bank</div>
         <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
           <li className="hover:text-royalblue-500 cursor-pointer">Explore products</li>
           <li className="hover:text-royalblue-500 cursor-pointer">Grab Deal</li>
