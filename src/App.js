@@ -1,11 +1,13 @@
 import React from "react";
 
+const royalMaroon = "#800000"; // define your maroon color here
+
 function App() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 font-sans">
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
-        <div className="text-5xl font-extrabold text-red-700">Beardev Bank</div>
+        <div className="text-5xl font-extrabold text-royalMaroon->Beardev Bank</div>
         <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
           <li className="hover:text-red-700 cursor-pointer">Explore products</li>
           <li className="hover:text-red-700 cursor-pointer">Grab Deal</li>
@@ -26,7 +28,7 @@ function App() {
       </nav>
 
       {/* HERO SECTION */}
-      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white">
+      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white mb-16">
         <div className="max-w-3xl space-y-6">
           <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
           <p className="text-xl max-w-xl">
@@ -49,9 +51,6 @@ function App() {
           />
         </div>
       </section>
-    </div>
-  );
-}
 
       {/* SERVICES SECTION */}
       <section className="max-w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
