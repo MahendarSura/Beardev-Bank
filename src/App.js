@@ -1,28 +1,26 @@
 import React from "react";
 
-const royalMaroon = "#800000"; 
-
 function App() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 font-sans">
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
-        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
+        <div className="text-5xl font-extrabold text-royalMaroon">
           Beardev Bank
         </div>
         <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
-          <li className="hover:text-red-700 cursor-pointer">Explore products</li>
-          <li className="hover:text-red-700 cursor-pointer">Grab Deal</li>
-          <li className="hover:text-red-700 cursor-pointer">Make Payments</li>
-          <li className="hover:text-red-700 cursor-pointer">Bank Smart</li>
-          <li className="hover:text-red-700 cursor-pointer">Accounts</li>
-          <li className="hover:text-red-700 cursor-pointer">Deposits</li>
-          <li className="hover:text-red-700 cursor-pointer">Cards</li>
-          <li className="hover:text-red-700 cursor-pointer">Loans</li>
-          <li className="hover:text-red-700 cursor-pointer">Investments</li>
-          <li className="hover:text-red-700 cursor-pointer">Insurance</li>
-          <li className="hover:text-red-700 cursor-pointer">Special Services</li>
-          <li className="hover:text-red-700 cursor-pointer">Knowledge Hub</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Explore products</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Grab Deal</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Make Payments</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Bank Smart</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Accounts</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Deposits</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Cards</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Loans</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Investments</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Insurance</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Special Services</li>
+          <li className="hover:text-royalMaroon cursor-pointer">Knowledge Hub</li>
         </ul>
         <div className="text-blue-600 font-semibold cursor-pointer hover:underline">
           Login/Signup
