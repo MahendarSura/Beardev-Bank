@@ -5,46 +5,48 @@ const royalMaroon = "#6B0B16"; // Dark Royal Maroon
 export default function BeardevBankHomepage() {
   return (
     <div className="font-sans text-black bg-white">
+
       {/* NAVBAR */}
-      <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
-        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
-          Beardev Learn
-        </div>
-        <div className="hidden md:block font-bold" style={{ color: royalMaroon }}>
+      <nav className="flex items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
+        <div className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
           Beardev-Bank
         </div>
-        <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base">
-          {[
-            "Explore Products",
-            "Grab Deals",
-            "Make Payments",
-            "Bank Smart",
-            "Accounts",
-            "Deposits",
-            "Cards",
-            "Loans",
-            "Investments",
-            "Insurance",
-            "Special Services",
-            "Knowledge Hub",
-          ].map((item) => (
-            <li
-              key={item}
-              className="hover:text-[#6B0B16] cursor-pointer transition-colors"
-            >
-              {item}
-            </li>
-          ))}
+        <ul className="hidden md:flex space-x-12 text-lg font-semibold">
+          <li className="hover:text-rose-900 cursor-pointer">Home</li>
+          <li className="hover:text-rose-900 cursor-pointer">Accounts</li>
+          <li className="hover:text-rose-900 cursor-pointer">Loans</li>
+          <li className="hover:text-rose-900 cursor-pointer">Investments</li>
+          <li className="hover:text-rose-900 cursor-pointer">Services</li>
+          <li className="hover:text-rose-900 cursor-pointer">Contact</li>
+         
+            Beardev Bank
+        </div>
+        <ul className="hidden md:flex flex-wrap space-x-6 font-semibold text-gray-700 max-w-4xl">
+          <li className="hover:text-[#6B0B16] cursor-pointer">Explore Products</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Grab Deals</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Make Payments</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Bank Smart</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Accounts</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Deposits</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Cards</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Loans</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Investments</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Insurance</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Special Services</li>
+          <li className="hover:text-[#6B0B16] cursor-pointer">Knowledge Hub</li>
         </ul>
-        <div className="text-blue-600 font-semibold cursor-pointer hover:underline mt-4 md:mt-0">
+        <div className="text-blue-600 font-semibold cursor-pointer hover:underline">
           Login / Signup
         </div>
       </nav>
 
-      {/* HERO SECTION */}
+      
+      {/* HERO SLIDER */}
       <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white">
         <div className="max-w-3xl space-y-6">
-          <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
+          <h1 className="text-5xl font-extrabold" style={{ color: "#fff" }}>
+            Reimagining Banking for You
+          </h1>
           <p className="text-xl max-w-xl">
             Seamless, secure, and personalized banking experience at Beardev-Bank. Explore our services today.
           </p>
@@ -58,6 +60,7 @@ export default function BeardevBankHomepage() {
           </div>
         </div>
         <div className="flex-1 hidden md:block">
+          {/* Placeholder for hero image */}
           <img
             src="https://images.unsplash.com/photo-1515165562835-c48f9bb46a3d?auto=format&fit=crop&w=800&q=80"
             alt="Digital Banking"
@@ -66,12 +69,13 @@ export default function BeardevBankHomepage() {
         </div>
       </section>
 
-      {/* SERVICES SECTION */}
+      {/* QUICK LINKS / SERVICES */}
       <section className="max-w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         {[
           {
             title: "Personal Banking",
-            description: "Savings accounts, checking accounts, debit cards & more.",
+            description:
+              "Savings accounts, checking accounts, debit cards & more.",
             icon: "🏦",
           },
           {
@@ -81,12 +85,14 @@ export default function BeardevBankHomepage() {
           },
           {
             title: "Investments",
-            description: "Mutual funds, fixed deposits & retirement plans tailored for you.",
+            description:
+              "Mutual funds, fixed deposits & retirement plans tailored for you.",
             icon: "📈",
           },
           {
             title: "Digital Banking",
-            description: "Manage your accounts & payments on the go with Beardev mobile app.",
+            description:
+              "Manage your accounts & payments on the go with Beardev mobile app.",
             icon: "📱",
           },
         ].map(({ title, description, icon }) => (
@@ -94,7 +100,11 @@ export default function BeardevBankHomepage() {
             key={title}
             className="bg-white shadow-lg rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition"
           >
-            <div className="text-4xl mb-4" style={{ color: royalMaroon }}>
+            <div
+              className="text-4xl mb-4"
+              style={{ color: royalMaroon }}
+              aria-hidden="true"
+            >
               {icon}
             </div>
             <h3 className="text-2xl font-bold mb-2" style={{ color: royalMaroon }}>
@@ -105,7 +115,7 @@ export default function BeardevBankHomepage() {
         ))}
       </section>
 
-      {/* OFFERS SECTION */}
+      {/* OFFERS & HIGHLIGHTS */}
       <section className="bg-rose-50 py-20 px-10">
         <div className="max-w-7xl mx-auto text-center space-y-8">
           <h2 className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
@@ -150,7 +160,40 @@ export default function BeardevBankHomepage() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* DIGITAL BANKING FEATURES */}
+      <section className="max-w-7xl mx-auto px-10 py-20 grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 className="text-4xl font-extrabold mb-6" style={{ color: royalMaroon }}>
+            Banking at Your Fingertips
+          </h2>
+          <p className="text-lg mb-6">
+            Our mobile and internet banking platforms make it easier than ever to manage your money securely and efficiently anytime, anywhere.
+          </p>
+          <ul className="list-disc list-inside space-y-3 text-black">
+            <li>Check account balances and transaction history</li>
+            <li>Instant funds transfer and bill payments</li>
+            <li>Easy loan applications and tracking</li>
+            <li>Personalized alerts and budgeting tools</li>
+          </ul>
+          <div className="mt-8 flex space-x-6">
+            <button className="bg-rose-900 text-white px-8 py-3 rounded font-semibold hover:bg-rose-800 transition">
+              Download App
+            </button>
+            <button className="border-2 border-rose-900 text-rose-900 px-8 py-3 rounded font-semibold hover:bg-rose-900 hover:text-white transition">
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=600&q=80"
+            alt="Mobile Banking"
+            className="rounded shadow-lg"
+          />
+        </div>
+      </section>
+
+      {/* CUSTOMER TESTIMONIALS */}
       <section className="bg-rose-50 py-20 px-10">
         <div className="max-w-5xl mx-auto text-center space-y-10">
           <h2 className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
@@ -162,19 +205,22 @@ export default function BeardevBankHomepage() {
                 name: "Rajesh Kumar",
                 feedback:
                   "Beardev-Bank has transformed how I manage my finances. Their app is super easy and customer support is fantastic!",
-                photo: "https://randomuser.me/api/portraits/men/32.jpg",
+                photo:
+                  "https://randomuser.me/api/portraits/men/32.jpg",
               },
               {
                 name: "Sneha Patil",
                 feedback:
                   "The loan process was smooth and quick. I got my funds in less than 24 hours!",
-                photo: "https://randomuser.me/api/portraits/women/44.jpg",
+                photo:
+                  "https://randomuser.me/api/portraits/women/44.jpg",
               },
               {
                 name: "Aditya Sharma",
                 feedback:
                   "Investments made simple! The advice and tools helped me grow my portfolio confidently.",
-                photo: "https://randomuser.me/api/portraits/men/45.jpg",
+                photo:
+                  "https://randomuser.me/api/portraits/men/45.jpg",
               },
             ].map(({ name, feedback, photo }) => (
               <div
@@ -210,25 +256,20 @@ export default function BeardevBankHomepage() {
           <div>
             <h4 className="font-semibold mb-3">Quick Links</h4>
             <ul>
-              {["Home", "Accounts", "Loans", "Investments", "Contact"].map((link) => (
-                <li key={link}>
-                  <a href="#" className="hover:underline">
-                    {link}
-                  </a>
-                </li>
-              ))}
+              <li><a href="#" className="hover:underline">Home</a></li>
+              <li><a href="#" className="hover:underline">Accounts</a></li>
+              <li><a href="#" className="hover:underline">Loans</a></li>
+              <li><a href="#" className="hover:underline">Investments</a></li>
+              <li><a href="#" className="hover:underline">Contact</a></li>
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-3">Services</h4>
             <ul>
-              {["Savings Account", "Credit Cards", "Personal Loans", "Fixed Deposits"].map((service) => (
-                <li key={service}>
-                  <a href="#" className="hover:underline">
-                    {service}
-                  </a>
-                </li>
-              ))}
+              <li><a href="#" className="hover:underline">Savings Account</a></li>
+              <li><a href="#" className="hover:underline">Credit Cards</a></li>
+              <li><a href="#" className="hover:underline">Personal Loans</a></li>
+              <li><a href="#" className="hover:underline">Fixed Deposits</a></li>
             </ul>
           </div>
           <div>
