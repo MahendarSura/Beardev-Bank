@@ -1,11 +1,12 @@
 import React from "react";
 
 function App() {
+  const royalMaroon = "#800020";
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 font-sans">
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
-        <div className="text-5xl font-extrabold text-royalMaroon">
+        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
           Beardev Bank
         </div>
         <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
@@ -231,3 +232,5 @@ function App() {
     </div>
   );
 }
+
+export default App;
