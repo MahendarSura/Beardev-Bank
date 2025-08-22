@@ -1,43 +1,27 @@
 import React from "react";
 
-const royalMaroon = "#6B0B16";
-
-export default function App() {
+function App() {
   return (
-    <>
+    <div className="max-w-7xl mx-auto px-6 py-12 font-sans">
       {/* NAVBAR */}
-      <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
-        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
-          Beardev Learn
-        </div>
-        <div className="hidden md:block font-bold" style={{ color: royalMaroon }}>
-          Beardev‑Bank
-        </div>
-        <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base mt-4 md:mt-0">
-          {[
-            "Explore Products",
-            "Grab Deals",
-            "Make Payments",
-            "Bank Smart",
-            "Accounts",
-            "Deposits",
-            "Cards",
-            "Loans",
-            "Investments",
-            "Insurance",
-            "Special Services",
-            "Knowledge Hub",
-          ].map((item) => (
-            <li
-              key={item}
-              className="hover:text-[#6B0B16] cursor-pointer transition-colors whitespace-nowrap"
-            >
-              {item}
-            </li>
-          ))}
+      <nav className="flex items-center justify-between mb-12">
+        <div className="text-5xl font-extrabold text-maroon-500">Beardev Bank</div>
+        <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
+          <li className="hover:text-royalblue-500 cursor-pointer">Explore products</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Grab Deal</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Make Payments</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Bank Smart</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Accounts</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Deposits</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Cards</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Loans</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Investments</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Insurance</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Special Services</li>
+          <li className="hover:text-royalblue-500 cursor-pointer">Knowledge Hub</li>
         </ul>
-        <div className="text-blue-600 font-semibold cursor-pointer hover:underline mt-4 md:mt-0">
-          Login / Signup
+        <div className="text-blue-600 font-semibold cursor-pointer hover:underline">
+          Login/Signup
         </div>
       </nav>
 
