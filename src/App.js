@@ -3,17 +3,6 @@ import React from "react";
 function App() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 font-sans bg-white">
-      {/* BRAND STYLES */}
-      <style>{`
-        /* Axis Bank primary red */
-        .text-axisRed { color: #E2001A; }
-        .hover\\:text-axisRed:hover { color: #E2001A; }
-        .bg-axisRed { background-color: #E2001A; }
-        .hover\\:bg-axisRed:hover { background-color: #E2001A; }
-        /* Roboto font */
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-        body { font-family: 'Roboto', sans-serif; }
-      `}</style>
 
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
