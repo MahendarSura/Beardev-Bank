@@ -1,9 +1,33 @@
 import React from "react";
 
 function App() {
-  // Define the royalMaroon color here or in a separate file if needed.
-  // Using a hex code directly is a quick fix.
   const royalMaroon = "#800020";
+
+  const navItems = [
+    "Explore products",
+    "Grab Deal",
+    "Make Payments",
+    "Bank Smart",
+    "Accounts",
+    "Deposits",
+    "Cards",
+    "Loans",
+    "Investments",
+    "Insurance",
+    "Special Services",
+    "Knowledge Hub",
+  ];
+
+  // Quick Links for footer
+  const quickLinks = ["Home", "Accounts", "Loans", "Investments", "Contact"];
+
+  // Services for footer
+  const footerServices = [
+    "Savings Account",
+    "Credit Cards",
+    "Personal Loans",
+    "Fixed Deposits",
+  ];
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-12 font-sans">
@@ -13,26 +37,29 @@ function App() {
           Beardev Bank
         </div>
         <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
-          <li className="hover:text-royalMaroon cursor-pointer">Explore products</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Grab Deal</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Make Payments</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Bank Smart</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Accounts</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Deposits</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Cards</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Loans</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Investments</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Insurance</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Special Services</li>
-          <li className="hover:text-royalMaroon cursor-pointer">Knowledge Hub</li>
+          {navItems.map((item) => (
+            <li
+              key={item}
+              className="cursor-pointer hover:underline"
+              style={{ color: "inherit" }}
+              onMouseEnter={(e) => (e.target.style.color = royalMaroon)}
+              onMouseLeave={(e) => (e.target.style.color = "")}
+            >
+              {item}
+            </li>
+          ))}
         </ul>
-        <div className="text-blue-600 font-semibold cursor-pointer hover:underline">
+        <div
+          className="text-blue-600 font-semibold cursor-pointer hover:underline"
+          role="button"
+          tabIndex={0}
+        >
           Login/Signup
         </div>
       </nav>
 
       {/* HERO SECTION */}
-      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white mb-16">
+      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white mb-16 rounded-lg">
         <div className="max-w-3xl space-y-6">
           <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
           <p className="text-xl max-w-xl">
@@ -96,7 +123,7 @@ function App() {
       </section>
 
       {/* OFFERS SECTION */}
-      <section className="bg-rose-50 py-20 px-10">
+      <section className="bg-rose-50 py-20 px-10 rounded-lg">
         <div className="max-w-7xl mx-auto text-center space-y-8">
           <h2 className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
             Explore Our Latest Offers
@@ -141,7 +168,7 @@ function App() {
       </section>
 
       {/* TESTIMONIALS SECTION */}
-      <section className="bg-rose-50 py-20 px-10">
+      <section className="bg-rose-50 py-20 px-10 rounded-lg">
         <div className="max-w-5xl mx-auto text-center space-y-10">
           <h2 className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
             What Our Customers Say
@@ -189,7 +216,7 @@ function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-rose-900 text-white py-12 mt-24">
+      <footer className="bg-rose-900 text-white py-12 mt-24 rounded-lg">
         <div className="max-w-7xl mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Beardev-Bank</h3>
@@ -200,7 +227,7 @@ function App() {
           <div>
             <h4 className="font-semibold mb-3">Quick Links</h4>
             <ul>
-              {["Home", "Accounts", "Loans", "Investments", "Contact"].map((link) => (
+              {quickLinks.map((link) => (
                 <li key={link}>
                   <a href="#" className="hover:underline">
                     {link}
@@ -212,7 +239,7 @@ function App() {
           <div>
             <h4 className="font-semibold mb-3">Services</h4>
             <ul>
-              {["Savings Account", "Credit Cards", "Personal Loans", "Fixed Deposits"].map((service) => (
+              {footerServices.map((service) => (
                 <li key={service}>
                   <a href="#" className="hover:underline">
                     {service}
