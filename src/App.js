@@ -4,7 +4,15 @@ const royalMaroon = "#6B0B16";
 
 export default function App() {
   return (
-    <div className="font-sans">
+    <>
+      <nav>...</nav>
+      <section>...</section>
+      <section>...</section>
+      <footer>...</footer>
+    </>
+  );
+}
+
       {/* NAVBAR */}
       <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
         <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
