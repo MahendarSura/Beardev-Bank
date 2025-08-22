@@ -4,43 +4,42 @@ const royalMaroon = "#6B0B16";
 
 export default function App() {
   return (
-    <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
-      <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
-        Beardev Learn
-      </div>
-      {/* Center subtitle - visible on md+ */}
-      <div className="hidden md:block font-bold" style={{ color: royalMaroon }}>
-        Beardev‑Bank
-      </div>
-      <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base">
-        {[
-          "Explore Products",
-          "Grab Deals",
-          "Make Payments",
-          "Bank Smart",
-          "Accounts",
-          "Deposits",
-          "Cards",
-          "Loans",
-          "Investments",
-          "Insurance",
-          "Special Services",
-          "Knowledge Hub",
-        ].map((item) => (
-          <li
-            key={item}
-            className="hover:text-[#6B0B16] cursor-pointer transition-colors whitespace-nowrap"
-          >
-            {item}
-          </li>
-        ))}
-      </ul>
-      <div className="text-blue-600 font-semibold cursor-pointer hover:underline mt-4 md:mt-0">
-        Login / Signup
-      </div>
-    </nav>
-  );
-}
+    <div className="font-sans">
+      {/* NAVBAR */}
+      <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
+        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
+          Beardev Learn
+        </div>
+        <div className="hidden md:block font-bold" style={{ color: royalMaroon }}>
+          Beardev‑Bank
+        </div>
+        <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base mt-4 md:mt-0">
+          {[
+            "Explore Products",
+            "Grab Deals",
+            "Make Payments",
+            "Bank Smart",
+            "Accounts",
+            "Deposits",
+            "Cards",
+            "Loans",
+            "Investments",
+            "Insurance",
+            "Special Services",
+            "Knowledge Hub",
+          ].map((item) => (
+            <li
+              key={item}
+              className="hover:text-[#6B0B16] cursor-pointer transition-colors whitespace-nowrap"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+        <div className="text-blue-600 font-semibold cursor-pointer hover:underline mt-4 md:mt-0">
+          Login / Signup
+        </div>
+      </nav>
 
       {/* HERO SECTION */}
       <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white">
@@ -151,7 +150,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
+      {/* TESTIMONIALS SECTION */}
       <section className="bg-rose-50 py-20 px-10">
         <div className="max-w-5xl mx-auto text-center space-y-10">
           <h2 className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
