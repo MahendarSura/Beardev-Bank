@@ -3,54 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Beardev Bank</title>
+  <title>Axis Bank Style Beardev Bank</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Custom royalMaroon color */
-    .text-royalMaroon { color: #800020; }
-    .hover\:text-royalMaroon:hover { color: #800020; }
+    /* Axis Bank primary red */
+    .text-axisRed { color: #E2001A; }
+    .hover\:text-axisRed:hover { color: #E2001A; }
+    .bg-axisRed { background-color: #E2001A; }
+    .hover\:bg-axisRed:hover { background-color: #E2001A; }
+    
+    /* Custom font: Roboto */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
   </style>
 </head>
-<body class="font-sans bg-white">
+<body class="bg-white">
 
   <div class="max-w-7xl mx-auto px-6 py-12">
 
     <!-- NAVBAR -->
     <nav class="flex items-center justify-between mb-12">
-      <div class="text-5xl font-extrabold text-royalMaroon">
+      <div class="text-5xl font-extrabold text-axisRed">
         Beardev Bank
       </div>
       <ul class="hidden md:flex space-x-10 font-semibold text-gray-700">
-        <li class="hover:text-royalMaroon cursor-pointer">Explore products</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Grab Deal</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Make Payments</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Bank Smart</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Accounts</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Deposits</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Cards</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Loans</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Investments</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Insurance</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Special Services</li>
-        <li class="hover:text-royalMaroon cursor-pointer">Knowledge Hub</li>
+        <li class="hover:text-axisRed cursor-pointer">Explore products</li>
+        <li class="hover:text-axisRed cursor-pointer">Grab Deal</li>
+        <li class="hover:text-axisRed cursor-pointer">Make Payments</li>
+        <li class="hover:text-axisRed cursor-pointer">Bank Smart</li>
+        <li class="hover:text-axisRed cursor-pointer">Accounts</li>
+        <li class="hover:text-axisRed cursor-pointer">Deposits</li>
+        <li class="hover:text-axisRed cursor-pointer">Cards</li>
+        <li class="hover:text-axisRed cursor-pointer">Loans</li>
+        <li class="hover:text-axisRed cursor-pointer">Investments</li>
+        <li class="hover:text-axisRed cursor-pointer">Insurance</li>
+        <li class="hover:text-axisRed cursor-pointer">Special Services</li>
+        <li class="hover:text-axisRed cursor-pointer">Knowledge Hub</li>
       </ul>
-      <div class="text-blue-600 font-semibold cursor-pointer hover:underline">
+      <div class="text-axisRed font-semibold cursor-pointer hover:underline">
         Login/Signup
       </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white mb-16">
+    <section class="relative h-[480px] md:h-[600px] bg-gradient-to-r from-red-700 to-red-600 flex items-center px-10 text-white mb-16">
       <div class="max-w-3xl space-y-6">
         <h1 class="text-5xl font-extrabold">Reimagining Banking for You</h1>
         <p class="text-xl max-w-xl">
           Seamless, secure, and personalized banking experience at Beardev-Bank. Explore our services today.
         </p>
         <div class="flex space-x-6">
-          <button class="bg-white text-rose-900 font-bold px-8 py-3 rounded hover:bg-gray-100 transition">
+          <button class="bg-white text-axisRed font-bold px-8 py-3 rounded hover:bg-gray-100 transition">
             Open an Account
           </button>
-          <button class="border-2 border-white text-white font-bold px-8 py-3 rounded hover:bg-white hover:text-rose-900 transition">
+          <button class="border-2 border-white text-white font-bold px-8 py-3 rounded hover:bg-white hover:text-axisRed transition">
             Learn More
           </button>
         </div>
@@ -68,35 +76,35 @@
     <section class="max-w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
       
       <div class="bg-white shadow-lg rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition">
-        <div class="text-4xl mb-4 text-royalMaroon">🏦</div>
-        <h3 class="text-2xl font-bold mb-2 text-royalMaroon">Personal Banking</h3>
+        <div class="text-4xl mb-4 text-axisRed">🏦</div>
+        <h3 class="text-2xl font-bold mb-2 text-axisRed">Personal Banking</h3>
         <p>Savings accounts, checking accounts, debit cards &amp; more.</p>
       </div>
 
       <div class="bg-white shadow-lg rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition">
-        <div class="text-4xl mb-4 text-royalMaroon">💳</div>
-        <h3 class="text-2xl font-bold mb-2 text-royalMaroon">Loans &amp; Credit</h3>
+        <div class="text-4xl mb-4 text-axisRed">💳</div>
+        <h3 class="text-2xl font-bold mb-2 text-axisRed">Loans &amp; Credit</h3>
         <p>Home loans, personal loans &amp; credit cards with low rates.</p>
       </div>
 
       <div class="bg-white shadow-lg rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition">
-        <div class="text-4xl mb-4 text-royalMaroon">📈</div>
-        <h3 class="text-2xl font-bold mb-2 text-royalMaroon">Investments</h3>
+        <div class="text-4xl mb-4 text-axisRed">📈</div>
+        <h3 class="text-2xl font-bold mb-2 text-axisRed">Investments</h3>
         <p>Mutual funds, fixed deposits &amp; retirement plans tailored for you.</p>
       </div>
 
       <div class="bg-white shadow-lg rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition">
-        <div class="text-4xl mb-4 text-royalMaroon">📱</div>
-        <h3 class="text-2xl font-bold mb-2 text-royalMaroon">Digital Banking</h3>
+        <div class="text-4xl mb-4 text-axisRed">📱</div>
+        <h3 class="text-2xl font-bold mb-2 text-axisRed">Digital Banking</h3>
         <p>Manage your accounts &amp; payments on the go with Beardev mobile app.</p>
       </div>
 
     </section>
 
     <!-- OFFERS SECTION -->
-    <section class="bg-rose-50 py-20 px-10">
+    <section class="bg-gray-50 py-20 px-10">
       <div class="max-w-7xl mx-auto text-center space-y-8">
-        <h2 class="text-4xl font-extrabold text-royalMaroon">Explore Our Latest Offers</h2>
+        <h2 class="text-4xl font-extrabold text-axisRed">Explore Our Latest Offers</h2>
         <p class="text-lg max-w-3xl mx-auto">
           Discover exciting products and services to help you achieve your financial goals faster.
         </p>
@@ -106,7 +114,7 @@
           <div class="bg-white rounded shadow hover:shadow-lg cursor-pointer overflow-hidden">
             <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=400&q=60" alt="Zero Processing Fee on Home Loans" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-2 text-royalMaroon">Zero Processing Fee on Home Loans</h3>
+              <h3 class="text-2xl font-semibold mb-2 text-axisRed">Zero Processing Fee on Home Loans</h3>
               <p>Apply now &amp; save up to ₹10,000.</p>
             </div>
           </div>
@@ -114,7 +122,7 @@
           <div class="bg-white rounded shadow hover:shadow-lg cursor-pointer overflow-hidden">
             <img src="https://images.unsplash.com/photo-1495121605193-b116b5b09e21?auto=format&fit=crop&w=400&q=60" alt="Earn More with Fixed Deposits" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-2 text-royalMaroon">Earn More with Fixed Deposits</h3>
+              <h3 class="text-2xl font-semibold mb-2 text-axisRed">Earn More with Fixed Deposits</h3>
               <p>Attractively higher interest rates on FD.</p>
             </div>
           </div>
@@ -122,7 +130,7 @@
           <div class="bg-white rounded shadow hover:shadow-lg cursor-pointer overflow-hidden">
             <img src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=400&q=60" alt="Instant Personal Loans" class="w-full h-48 object-cover" />
             <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-2 text-royalMaroon">Instant Personal Loans</h3>
+              <h3 class="text-2xl font-semibold mb-2 text-axisRed">Instant Personal Loans</h3>
               <p>Get funds within 24 hours at competitive rates.</p>
             </div>
           </div>
@@ -130,6 +138,18 @@
         </div>
       </div>
     </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="bg-gray-50 py-20 px-10">
+      <div class="max-w-5xl mx-auto text-center space-y-10">
+        <h2 class="text-4xl font-extrabold text-axisRed">What Our Customers Say</h2>
+
+        <div class="space-y-10">
+
+          <div class="bg-white p-8 rounded shadow-lg max-w-xl mx-auto text-left">
+            <div class="flex items-center mb-4 space-x-4">
+              <img src="https://randomuser.me/api/portraits/men/32
+
 
     <!-- TESTIMONIALS SECTION -->
     <section class="bg-rose-50 py-20 px-10">
