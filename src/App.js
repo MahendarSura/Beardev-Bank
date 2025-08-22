@@ -49,6 +49,9 @@ function App() {
           />
         </div>
       </section>
+    </div>
+  );
+}
 
       {/* SERVICES SECTION */}
       <section className="max-w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
