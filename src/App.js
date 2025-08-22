@@ -41,7 +41,6 @@ export default function BeardevBankHomepage() {
         </div>
       </nav>
 
-
       {/* HERO SECTION */}
       <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white">
         <div className="max-w-3xl space-y-6">
