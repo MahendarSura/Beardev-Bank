@@ -1,61 +1,45 @@
 import React from "react";
 
-const royalMaroon = "#6B0B16";
-
-function Navbar() {
-  const navItems = [
-    "Explore Products",
-    "Grab Deals",
-    "Make Payments",
-    "Bank Smart",
-    "Accounts",
-    "Deposits",
-    "Cards",
-    "Loans",
-    "Investments",
-    "Insurance",
-    "Special Services",
-    "Knowledge Hub",
-  ];
-
-  return (
-    <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
-      <div className="flex items-center space-x-6 mb-4 md:mb-0">
-        {/* Main logo */}
-        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
-          Beardev Learn
-        </div>
-        {/* Subtitle or brand name */}
-        <div className="hidden md:block font-bold text-xl" style={{ color: royalMaroon }}>
-          Beardev-Bank
-        </div>
-      </div>
-
-      {/* Navigation links */}
-      <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base max-w-full overflow-x-auto scrollbar-hide">
-        {navItems.map((item) => (
-          <li
-            key={item}
-            className="hover:text-[#6B0B16] cursor-pointer transition-colors whitespace-nowrap"
-          >
-            {item}
-          </li>
-        ))}
-      </ul>
-
-      {/* Login/Signup */}
-      <div className="text-blue-600 font-semibold cursor-pointer hover:underline mt-4 md:mt-0">
-        Login / Signup
-      </div>
-    </nav>
-  );
-}
+const royalMaroon = "#6B0B16"; // Dark Royal Maroon
 
 export default function BeardevBankHomepage() {
   return (
     <div className="font-sans text-black bg-white">
       {/* NAVBAR */}
-      <Navbar />
+      <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
+        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
+          Beardev Learn
+        </div>
+        <div className="hidden md:block font-bold" style={{ color: royalMaroon }}>
+          Beardev-Bank
+        </div>
+        <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base">
+          {[
+            "Explore Products",
+            "Grab Deals",
+            "Make Payments",
+            "Bank Smart",
+            "Accounts",
+            "Deposits",
+            "Cards",
+            "Loans",
+            "Investments",
+            "Insurance",
+            "Special Services",
+            "Knowledge Hub",
+          ].map((item) => (
+            <li
+              key={item}
+              className="hover:text-[#6B0B16] cursor-pointer transition-colors"
+            >
+              {item}
+            </li>
+          ))}
+        </ul>
+        <div className="text-blue-600 font-semibold cursor-pointer hover:underline mt-4 md:mt-0">
+          Login / Signup
+        </div>
+      </nav>
 
       {/* HERO SECTION */}
       <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white">
