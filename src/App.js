@@ -41,12 +41,10 @@ export default function BeardevBankHomepage() {
         </div>
       </nav>
 
-      {/* HERO SLIDER */}
+      {/* HERO SECTION */}
       <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white">
         <div className="max-w-3xl space-y-6">
-          <h1 className="text-5xl font-extrabold" style={{ color: "#fff" }}>
-            Reimagining Banking for You
-          </h1>
+          <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
           <p className="text-xl max-w-xl">
             Seamless, secure, and personalized banking experience at Beardev-Bank. Explore our services today.
           </p>
@@ -60,7 +58,6 @@ export default function BeardevBankHomepage() {
           </div>
         </div>
         <div className="flex-1 hidden md:block">
-          {/* Placeholder for hero image */}
           <img
             src="https://images.unsplash.com/photo-1515165562835-c48f9bb46a3d?auto=format&fit=crop&w=800&q=80"
             alt="Digital Banking"
@@ -69,7 +66,7 @@ export default function BeardevBankHomepage() {
         </div>
       </section>
 
-      {/* QUICK LINKS / SERVICES */}
+      {/* SERVICES SECTION */}
       <section className="max-w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
         {[
           {
@@ -97,11 +94,7 @@ export default function BeardevBankHomepage() {
             key={title}
             className="bg-white shadow-lg rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition"
           >
-            <div
-              className="text-4xl mb-4"
-              style={{ color: royalMaroon }}
-              aria-hidden="true"
-            >
+            <div className="text-4xl mb-4" style={{ color: royalMaroon }}>
               {icon}
             </div>
             <h3 className="text-2xl font-bold mb-2" style={{ color: royalMaroon }}>
@@ -112,7 +105,7 @@ export default function BeardevBankHomepage() {
         ))}
       </section>
 
-      {/* OFFERS & HIGHLIGHTS */}
+      {/* OFFERS SECTION */}
       <section className="bg-rose-50 py-20 px-10">
         <div className="max-w-7xl mx-auto text-center space-y-8">
           <h2 className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
@@ -157,40 +150,7 @@ export default function BeardevBankHomepage() {
         </div>
       </section>
 
-      {/* DIGITAL BANKING FEATURES */}
-      <section className="max-w-7xl mx-auto px-10 py-20 grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <h2 className="text-4xl font-extrabold mb-6" style={{ color: royalMaroon }}>
-            Banking at Your Fingertips
-          </h2>
-          <p className="text-lg mb-6">
-            Our mobile and internet banking platforms make it easier than ever to manage your money securely and efficiently anytime, anywhere.
-          </p>
-          <ul className="list-disc list-inside space-y-3 text-black">
-            <li>Check account balances and transaction history</li>
-            <li>Instant funds transfer and bill payments</li>
-            <li>Easy loan applications and tracking</li>
-            <li>Personalized alerts and budgeting tools</li>
-          </ul>
-          <div className="mt-8 flex space-x-6">
-            <button className="bg-rose-900 text-white px-8 py-3 rounded font-semibold hover:bg-rose-800 transition">
-              Download App
-            </button>
-            <button className="border-2 border-rose-900 text-rose-900 px-8 py-3 rounded font-semibold hover:bg-rose-900 hover:text-white transition">
-              Learn More
-            </button>
-          </div>
-        </div>
-        <div>
-          <img
-            src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=600&q=80"
-            alt="Mobile Banking"
-            className="rounded shadow-lg"
-          />
-        </div>
-      </section>
-
-      {/* CUSTOMER TESTIMONIALS */}
+      {/* TESTIMONIALS */}
       <section className="bg-rose-50 py-20 px-10">
         <div className="max-w-5xl mx-auto text-center space-y-10">
           <h2 className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
