@@ -1,75 +1,71 @@
 import React from "react";
 
 function App() {
-  const royalMaroon = "#800020";
-
-  const navItems = [
-    "Explore products",
-    "Grab Deal",
-    "Make Payments",
-    "Bank Smart",
-    "Accounts",
-    "Deposits",
-    "Cards",
-    "Loans",
-    "Investments",
-    "Insurance",
-    "Special Services",
-    "Knowledge Hub",
-  ];
-
-  // Quick Links for footer
-  const quickLinks = ["Home", "Accounts", "Loans", "Investments", "Contact"];
-
-  // Services for footer
-  const footerServices = [
-    "Savings Account",
-    "Credit Cards",
-    "Personal Loans",
-    "Fixed Deposits",
-  ];
+  const axisRed = "#e41f26";
+  const darkGray = "#333333";
+  const lightGray = "#f8f8f8";
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 font-sans">
+    <div className="max-w-7xl mx-auto px-6 py-12 font-sans" style={{ fontFamily: "Arial, sans-serif", color: darkGray }}>
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
-        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
+        <div className="text-5xl font-extrabold" style={{ color: axisRed, fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
           Beardev Bank
         </div>
-        <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
-          {navItems.map((item) => (
+        <ul className="hidden md:flex space-x-10 font-semibold" style={{ color: darkGray }}>
+          {[
+            "Explore products",
+            "Grab Deal",
+            "Make Payments",
+            "Bank Smart",
+            "Accounts",
+            "Deposits",
+            "Cards",
+            "Loans",
+            "Investments",
+            "Insurance",
+            "Special Services",
+            "Knowledge Hub",
+          ].map((item) => (
             <li
               key={item}
-              className="cursor-pointer hover:underline"
-              style={{ color: "inherit" }}
-              onMouseEnter={(e) => (e.target.style.color = royalMaroon)}
-              onMouseLeave={(e) => (e.target.style.color = "")}
+              className="cursor-pointer hover:text-red-600 transition"
+              style={{ color: darkGray }}
+              onMouseEnter={e => e.currentTarget.style.color = axisRed}
+              onMouseLeave={e => e.currentTarget.style.color = darkGray}
             >
               {item}
             </li>
           ))}
         </ul>
         <div
-          className="text-blue-600 font-semibold cursor-pointer hover:underline"
-          role="button"
-          tabIndex={0}
+          className="font-semibold cursor-pointer hover:underline"
+          style={{ color: axisRed }}
         >
           Login/Signup
         </div>
       </nav>
 
       {/* HERO SECTION */}
-      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white mb-16 rounded-lg">
+      <section
+        className="relative h-[480px] md:h-[600px] flex items-center px-10 mb-16"
+        style={{
+          background: `linear-gradient(90deg, ${axisRed} 0%, #a11a20 100%)`,
+          color: "white",
+        }}
+      >
         <div className="max-w-3xl space-y-6">
-          <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
+          <h1 className="text-5xl font-extrabold" style={{ fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif" }}>
+            Reimagining Banking for You
+          </h1>
           <p className="text-xl max-w-xl">
             Seamless, secure, and personalized banking experience at Beardev-Bank. Explore our services today.
           </p>
           <div className="flex space-x-6">
-            <button className="bg-white text-rose-900 font-bold px-8 py-3 rounded hover:bg-gray-100 transition">
+            <button className="bg-white text-red-700 font-bold px-8 py-3 rounded hover:bg-gray-100 transition">
               Open an Account
             </button>
-            <button className="border-2 border-white text-white font-bold px-8 py-3 rounded hover:bg-white hover:text-rose-900 transition">
+            <button className="border-2 border-white text-white font-bold px-8 py-3 rounded hover:bg-white hover:text-red-700 transition">
               Learn More
             </button>
           </div>
@@ -84,7 +80,7 @@ function App() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section className="max-w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <section className="max-w-7xl mx-auto px-10 py-16 grid grid-cols-1 md:grid-cols-4 gap-10" style={{ color: darkGray }}>
         {[
           {
             title: "Personal Banking",
@@ -111,10 +107,10 @@ function App() {
             key={title}
             className="bg-white shadow-lg rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition"
           >
-            <div className="text-4xl mb-4" style={{ color: royalMaroon }}>
+            <div className="text-4xl mb-4" style={{ color: axisRed }}>
               {icon}
             </div>
-            <h3 className="text-2xl font-bold mb-2" style={{ color: royalMaroon }}>
+            <h3 className="text-2xl font-bold mb-2" style={{ color: axisRed }}>
               {title}
             </h3>
             <p>{description}</p>
@@ -123,9 +119,9 @@ function App() {
       </section>
 
       {/* OFFERS SECTION */}
-      <section className="bg-rose-50 py-20 px-10 rounded-lg">
-        <div className="max-w-7xl mx-auto text-center space-y-8">
-          <h2 className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
+      <section className="bg-gray-100 py-20 px-10">
+        <div className="max-w-7xl mx-auto text-center space-y-8" style={{ color: darkGray }}>
+          <h2 className="text-4xl font-extrabold" style={{ color: axisRed }}>
             Explore Our Latest Offers
           </h2>
           <p className="text-lg max-w-3xl mx-auto">
@@ -156,7 +152,7 @@ function App() {
               >
                 <img src={img} alt={title} className="w-full h-48 object-cover" />
                 <div className="p-6">
-                  <h3 className="text-2xl font-semibold mb-2" style={{ color: royalMaroon }}>
+                  <h3 className="text-2xl font-semibold mb-2" style={{ color: axisRed }}>
                     {title}
                   </h3>
                   <p>{details}</p>
@@ -168,9 +164,9 @@ function App() {
       </section>
 
       {/* TESTIMONIALS SECTION */}
-      <section className="bg-rose-50 py-20 px-10 rounded-lg">
-        <div className="max-w-5xl mx-auto text-center space-y-10">
-          <h2 className="text-4xl font-extrabold" style={{ color: royalMaroon }}>
+      <section className="bg-gray-100 py-20 px-10">
+        <div className="max-w-5xl mx-auto text-center space-y-10" style={{ color: darkGray }}>
+          <h2 className="text-4xl font-extrabold" style={{ color: axisRed }}>
             What Our Customers Say
           </h2>
           <div className="space-y-10">
@@ -204,7 +200,7 @@ function App() {
                     alt={name}
                     className="w-16 h-16 rounded-full object-cover"
                   />
-                  <h3 className="text-xl font-semibold" style={{ color: royalMaroon }}>
+                  <h3 className="text-xl font-semibold" style={{ color: axisRed }}>
                     {name}
                   </h3>
                 </div>
@@ -216,7 +212,7 @@ function App() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-rose-900 text-white py-12 mt-24 rounded-lg">
+      <footer className="bg-red-900 text-white py-12 mt-24" style={{ backgroundColor: "#7f0e12" }}>
         <div className="max-w-7xl mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Beardev-Bank</h3>
@@ -227,9 +223,9 @@ function App() {
           <div>
             <h4 className="font-semibold mb-3">Quick Links</h4>
             <ul>
-              {quickLinks.map((link) => (
+              {["Home", "Accounts", "Loans", "Investments", "Contact"].map((link) => (
                 <li key={link}>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline text-white">
                     {link}
                   </a>
                 </li>
@@ -239,9 +235,9 @@ function App() {
           <div>
             <h4 className="font-semibold mb-3">Services</h4>
             <ul>
-              {footerServices.map((service) => (
+              {["Savings Account", "Credit Cards", "Personal Loans", "Fixed Deposits"].map((service) => (
                 <li key={service}>
-                  <a href="#" className="hover:underline">
+                  <a href="#" className="hover:underline text-white">
                     {service}
                   </a>
                 </li>
