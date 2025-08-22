@@ -7,22 +7,34 @@ export default function BeardevBankHomepage() {
     <div className="font-sans text-black bg-white">
       {/* NAVBAR */}
       <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
-        <div className="text-5xl font-extrabold text-Royal Maroon-500">Beardev Learn</div>
+        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
+          Beardev Learn
+        </div>
+        <div className="hidden md:block font-bold" style={{ color: royalMaroon }}>
           Beardev-Bank
         </div>
         <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base">
-          <li className="hover:text-[#6B0B16] cursor-pointer">Explore Products</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Grab Deals</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Make Payments</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Bank Smart</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Accounts</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Deposits</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Cards</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Loans</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Investments</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Insurance</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Special Services</li>
-          <li className="hover:text-[#6B0B16] cursor-pointer">Knowledge Hub</li>
+          {[
+            "Explore Products",
+            "Grab Deals",
+            "Make Payments",
+            "Bank Smart",
+            "Accounts",
+            "Deposits",
+            "Cards",
+            "Loans",
+            "Investments",
+            "Insurance",
+            "Special Services",
+            "Knowledge Hub",
+          ].map((item) => (
+            <li
+              key={item}
+              className="hover:text-[#6B0B16] cursor-pointer transition-colors"
+            >
+              {item}
+            </li>
+          ))}
         </ul>
         <div className="text-blue-600 font-semibold cursor-pointer hover:underline mt-4 md:mt-0">
           Login / Signup
@@ -62,8 +74,7 @@ export default function BeardevBankHomepage() {
         {[
           {
             title: "Personal Banking",
-            description:
-              "Savings accounts, checking accounts, debit cards & more.",
+            description: "Savings accounts, checking accounts, debit cards & more.",
             icon: "🏦",
           },
           {
@@ -73,14 +84,12 @@ export default function BeardevBankHomepage() {
           },
           {
             title: "Investments",
-            description:
-              "Mutual funds, fixed deposits & retirement plans tailored for you.",
+            description: "Mutual funds, fixed deposits & retirement plans tailored for you.",
             icon: "📈",
           },
           {
             title: "Digital Banking",
-            description:
-              "Manage your accounts & payments on the go with Beardev mobile app.",
+            description: "Manage your accounts & payments on the go with Beardev mobile app.",
             icon: "📱",
           },
         ].map(({ title, description, icon }) => (
@@ -193,22 +202,19 @@ export default function BeardevBankHomepage() {
                 name: "Rajesh Kumar",
                 feedback:
                   "Beardev-Bank has transformed how I manage my finances. Their app is super easy and customer support is fantastic!",
-                photo:
-                  "https://randomuser.me/api/portraits/men/32.jpg",
+                photo: "https://randomuser.me/api/portraits/men/32.jpg",
               },
               {
                 name: "Sneha Patil",
                 feedback:
                   "The loan process was smooth and quick. I got my funds in less than 24 hours!",
-                photo:
-                  "https://randomuser.me/api/portraits/women/44.jpg",
+                photo: "https://randomuser.me/api/portraits/women/44.jpg",
               },
               {
                 name: "Aditya Sharma",
                 feedback:
                   "Investments made simple! The advice and tools helped me grow my portfolio confidently.",
-                photo:
-                  "https://randomuser.me/api/portraits/men/45.jpg",
+                photo: "https://randomuser.me/api/portraits/men/45.jpg",
               },
             ].map(({ name, feedback, photo }) => (
               <div
@@ -244,20 +250,25 @@ export default function BeardevBankHomepage() {
           <div>
             <h4 className="font-semibold mb-3">Quick Links</h4>
             <ul>
-              <li><a href="#" className="hover:underline">Home</a></li>
-              <li><a href="#" className="hover:underline">Accounts</a></li>
-              <li><a href="#" className="hover:underline">Loans</a></li>
-              <li><a href="#" className="hover:underline">Investments</a></li>
-              <li><a href="#" className="hover:underline">Contact</a></li>
+              {["Home", "Accounts", "Loans", "Investments", "Contact"].map((link) => (
+                <li key={link}>
+                  <a href="#" className="hover:underline">
+                    {link}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
             <h4 className="font-semibold mb-3">Services</h4>
             <ul>
-              <li><a href="#" className="hover:underline">Savings Account</a></li>
-              <li><a href="#" className="hover:underline">Credit Cards</a></li>
-              <li><a href="#" className="hover:underline">Personal Loans</a></li>
-              <li><a href="#" className="hover:underline">Fixed Deposits</a></li>
+              {["Savings Account", "Credit Cards", "Personal Loans", "Fixed Deposits"].map((service) => (
+                <li key={service}>
+                  <a href="#" className="hover:underline">
+                    {service}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
