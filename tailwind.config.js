@@ -1,8 +1,11 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        royalMaroon: '#800000', // 
+      },
+    },
   },
   plugins: [],
 };
-
