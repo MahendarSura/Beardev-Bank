@@ -15,6 +15,6 @@ body {
 
 /* Axis Bank Red */
 .text-axisRed { color: #E2001A; }
-.hover\:text-axisRed:hover { color: #E2001A; }
+.hover-text-axisRed:hover { color: #E2001A; }
 .bg-axisRed { background-color: #E2001A; }
-.hover\:bg-axisRed:hover { background-color: #E2001A; }
+.hover-bg-axisRed:hover { background-color: #E2001A; }
