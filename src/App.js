@@ -1,45 +1,61 @@
 import React from "react";
 
-const royalMaroon = "#6B0B16"; // Dark Royal Maroon
+const royalMaroon = "#6B0B16";
+
+function Navbar() {
+  const navItems = [
+    "Explore Products",
+    "Grab Deals",
+    "Make Payments",
+    "Bank Smart",
+    "Accounts",
+    "Deposits",
+    "Cards",
+    "Loans",
+    "Investments",
+    "Insurance",
+    "Special Services",
+    "Knowledge Hub",
+  ];
+
+  return (
+    <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
+      <div className="flex items-center space-x-6 mb-4 md:mb-0">
+        {/* Main logo */}
+        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
+          Beardev Learn
+        </div>
+        {/* Subtitle or brand name */}
+        <div className="hidden md:block font-bold text-xl" style={{ color: royalMaroon }}>
+          Beardev-Bank
+        </div>
+      </div>
+
+      {/* Navigation links */}
+      <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base max-w-full overflow-x-auto scrollbar-hide">
+        {navItems.map((item) => (
+          <li
+            key={item}
+            className="hover:text-[#6B0B16] cursor-pointer transition-colors whitespace-nowrap"
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
+
+      {/* Login/Signup */}
+      <div className="text-blue-600 font-semibold cursor-pointer hover:underline mt-4 md:mt-0">
+        Login / Signup
+      </div>
+    </nav>
+  );
+}
 
 export default function BeardevBankHomepage() {
   return (
     <div className="font-sans text-black bg-white">
       {/* NAVBAR */}
-      <nav className="flex flex-col md:flex-row items-center justify-between px-10 py-5 shadow-md sticky top-0 bg-white z-50">
-        <div className="text-5xl font-extrabold" style={{ color: royalMaroon }}>
-          Beardev Learn
-        </div>
-        <div className="hidden md:block font-bold" style={{ color: royalMaroon }}>
-          Beardev-Bank
-        </div>
-        <ul className="flex flex-wrap justify-center gap-4 md:gap-6 font-semibold text-gray-800 text-sm md:text-base">
-          {[
-            "Explore Products",
-            "Grab Deals",
-            "Make Payments",
-            "Bank Smart",
-            "Accounts",
-            "Deposits",
-            "Cards",
-            "Loans",
-            "Investments",
-            "Insurance",
-            "Special Services",
-            "Knowledge Hub",
-          ].map((item) => (
-            <li
-              key={item}
-              className="hover:text-[#6B0B16] cursor-pointer transition-colors"
-            >
-              {item}
-            </li>
-          ))}
-        </ul>
-        <div className="text-blue-600 font-semibold cursor-pointer hover:underline mt-4 md:mt-0">
-          Login / Signup
-        </div>
-      </nav>
+      <Navbar />
 
       {/* HERO SECTION */}
       <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-rose-900 to-rose-700 flex items-center px-10 text-white">
@@ -199,47 +215,49 @@ export default function BeardevBankHomepage() {
       </section>
 
       {/* FOOTER */}
-<footer className="bg-rose-900 text-white py-12 mt-24">
-  <div className="max-w-7xl mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
-    <div>
-      <h3 className="text-xl font-bold mb-4">Beardev-Bank</h3>
-      <p>
-        Empowering your financial journey with innovative banking solutions designed for the modern world.
-      </p>
+      <footer className="bg-rose-900 text-white py-12 mt-24">
+        <div className="max-w-7xl mx-auto px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 className="text-xl font-bold mb-4">Beardev-Bank</h3>
+            <p>
+              Empowering your financial journey with innovative banking solutions designed for the modern world.
+            </p>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-3">Quick Links</h4>
+            <ul>
+              {["Home", "Accounts", "Loans", "Investments", "Contact"].map((link) => (
+                <li key={link}>
+                  <a href="#" className="hover:underline">
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-3">Services</h4>
+            <ul>
+              {["Savings Account", "Credit Cards", "Personal Loans", "Fixed Deposits"].map((service) => (
+                <li key={service}>
+                  <a href="#" className="hover:underline">
+                    {service}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-3">Contact</h4>
+            <p>Email: support@beardevbank.com</p>
+            <p>Phone: +1 (800) 123-4567</p>
+            <p>Address: 123 Hightech City, Mancherial</p>
+          </div>
+        </div>
+        <div className="mt-12 text-center text-sm text-gray-300">
+          © 2025 Beardev-Bank. All rights reserved.
+        </div>
+      </footer>
     </div>
-    <div>
-      <h4 className="font-semibold mb-3">Quick Links</h4>
-      <ul>
-        {["Home", "Accounts", "Loans", "Investments", "Contact"].map((link) => (
-          <li key={link}>
-            <a href="#" className="hover:underline">
-              {link}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-    <div>
-      <h4 className="font-semibold mb-3">Services</h4>
-      <ul>
-        {["Savings Account", "Credit Cards", "Personal Loans", "Fixed Deposits"].map((service) => (
-          <li key={service}>
-            <a href="#" className="hover:underline">
-              {service}
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-    <div>
-      <h4 className="font-semibold mb-3">Contact</h4>
-      <p>Email: support@beardevbank.com</p>
-      <p>Phone: +1 (800) 123-4567</p>
-      <p>Address: 123 Hightech City, Mancherial</p>
-    </div>
-  </div>
-  <div className="mt-12 text-center text-sm text-gray-300">
-    © 2025 Beardev-Bank. All rights reserved.
-  </div>
-</footer>
-
+  );
+}
