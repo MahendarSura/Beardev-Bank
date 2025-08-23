@@ -1,5 +1,3 @@
-App.tsx code
-
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
@@ -44,3 +42,6 @@ function App() {
     </div>
   );
 }
+
+export default App;
+
