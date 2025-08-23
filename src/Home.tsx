@@ -17,21 +17,13 @@ function Home() {
           <li className="hover:text-[#E80000] cursor-pointer">Help</li>
           <li className="hover:text-[#E80000] cursor-pointer">Complaints</li>
         </ul>
+        {/* LOGIN TOP RIGHT */}
         <div className="text-[#E80000] font-semibold cursor-pointer hover:underline">Login</div>
       </nav>
 
       {/* HERO SECTION */}
-      <section className="bg-white shadow rounded-md p-8 flex flex-col md:flex-row items-center justify-center gap-10">
-        {/* Image Left */}
-        <div className="flex-1 flex justify-center">
-          <img
-            src="https://images.unsplash.com/photo-1515165562835-c48f9bb46a3d?auto=format&fit=crop&w=600&q=80"
-            alt="Digital Banking"
-            className="rounded-lg shadow max-w-full h-auto object-cover"
-          />
-        </div>
-
-        {/* Content Right */}
+      <section className="bg-white shadow rounded-md p-8 flex flex-col md:flex-row items-center md:items-center justify-between gap-10">
+        {/* Content Left */}
         <div className="flex-1 max-w-xl text-center md:text-left">
           <h1 className="text-5xl font-extrabold text-[#E80000] mb-6 leading-tight">
             Truth, Trust, Transparency
@@ -48,10 +40,20 @@ function Home() {
             </button>
           </div>
         </div>
+
+        {/* Image Right */}
+        <div className="flex-1 flex justify-center">
+          <img
+            src="https://images.unsplash.com/photo-1515165562835-c48f9bb46a3d?auto=format&fit=crop&w=600&q=80"
+            alt="Digital Banking"
+            className="rounded-lg shadow max-w-full h-auto object-cover"
+          />
+        </div>
       </section>
 
       {/* SERVICES SECTION */}
       <section className="bg-white shadow rounded-md p-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Same content */}
         <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
           <div className="text-5xl mb-4 text-[#E80000]">🏦</div>
           <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Accounts</h3>
@@ -82,6 +84,7 @@ function Home() {
             Discover the best deals on credit cards, loans, and investment products tailored for you.
           </p>
           <div className="mt-12 grid md:grid-cols-3 gap-8">
+            {/* Same content */}
             <div className="rounded shadow hover:shadow-lg cursor-pointer overflow-hidden border border-gray-100">
               <img
                 src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=400&q=60"
@@ -124,6 +127,7 @@ function Home() {
         <div className="max-w-5xl mx-auto text-center space-y-10">
           <h2 className="text-4xl font-extrabold text-[#E80000]">What Our Customers Say</h2>
           <div className="space-y-10">
+            {/* Testimonials cards */}
             <div className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
               <div className="flex items-center mb-4 space-x-4">
                 <img
@@ -190,4 +194,3 @@ function Home() {
 }
 
 export default Home;
-
