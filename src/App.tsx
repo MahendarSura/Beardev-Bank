@@ -20,10 +20,6 @@ function App() {
         */}
         <div className="max-w-7xl mx-auto px-4 py-8">
           <Routes>
-            {/*
-              Uses the router.
-              It links to the home page, login, and dashboard pages.
-            */}
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
