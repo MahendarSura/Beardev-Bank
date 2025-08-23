@@ -1,4 +1,3 @@
-/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 @tailwind base;
@@ -13,8 +12,16 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Axis Bank Red */
-.text-axisRed { color: #E2001A; }
-.hover-text-axisRed:hover { color: #E2001A; }
-.bg-axisRed { background-color: #E2001A; }
-.hover-bg-axisRed:hover { background-color: #E2001A; }
+/* Axis Bank Red Colors */
+.text-axisRed {
+  color: #E2001A;
+}
+.hover-text-axisRed:hover {
+  color: #E2001A;
+}
+.bg-axisRed {
+  background-color: #E2001A;
+}
+.hover-bg-axisRed:hover {
+  background-color: #E2001A;
+}
