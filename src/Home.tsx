@@ -2,10 +2,10 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-4 font-sans bg-white min-h-screen flex flex-col">
+    <div className="max-w-7xl mx-auto px-6 py-8 font-sans bg-gray-100 min-h-screen flex flex-col space-y-10">
 
       {/* NAVBAR */}
-      <nav className="flex items-center justify-between py-4 border-b border-gray-200">
+      <nav className="bg-white shadow rounded-md flex items-center justify-between py-4 px-6 border border-gray-200">
         <div className="text-3xl font-extrabold text-[#E80000] cursor-pointer">ICICI Bank</div>
         <ul className="hidden md:flex space-x-8 font-semibold text-gray-700">
           <li className="hover:text-[#E80000] cursor-pointer">Personal</li>
@@ -21,13 +21,13 @@ function Home() {
       </nav>
 
       {/* HERO SECTION */}
-      <section className="flex-grow flex flex-col md:flex-row items-center justify-center px-6 md:px-0 gap-10 mt-8">
+      <section className="bg-white shadow rounded-md p-8 flex flex-col md:flex-row items-center justify-center gap-10">
         {/* Image Left */}
         <div className="flex-1 flex justify-center">
           <img
             src="https://images.unsplash.com/photo-1515165562835-c48f9bb46a3d?auto=format&fit=crop&w=600&q=80"
             alt="Digital Banking"
-            className="rounded-lg shadow-lg max-w-full h-auto object-cover"
+            className="rounded-lg shadow max-w-full h-auto object-cover"
           />
         </div>
 
@@ -51,38 +51,38 @@ function Home() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section className="max-w-7xl mx-auto px-4 md:px-0 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
-        <div className="bg-white shadow rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition">
-          <div className="text-4xl mb-4 text-[#E80000]">🏦</div>
+      <section className="bg-white shadow rounded-md p-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
+          <div className="text-5xl mb-4 text-[#E80000]">🏦</div>
           <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Accounts</h3>
           <p>Savings accounts, checking accounts, debit cards & more.</p>
         </div>
-        <div className="bg-white shadow rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition">
-          <div className="text-4xl mb-4 text-[#E80000]">💳</div>
+        <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
+          <div className="text-5xl mb-4 text-[#E80000]">💳</div>
           <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Credit Cards</h3>
           <p>Credit cards with attractive rewards and benefits.</p>
         </div>
-        <div className="bg-white shadow rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition">
-          <div className="text-4xl mb-4 text-[#E80000]">💰</div>
+        <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
+          <div className="text-5xl mb-4 text-[#E80000]">💰</div>
           <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Loans</h3>
           <p>Home loans, personal loans, and car loans with competitive rates.</p>
         </div>
-        <div className="bg-white shadow rounded p-6 flex flex-col items-start hover:shadow-xl cursor-pointer transition">
-          <div className="text-4xl mb-4 text-[#E80000]">📱</div>
+        <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
+          <div className="text-5xl mb-4 text-[#E80000]">📱</div>
           <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Digital Banking</h3>
           <p>Manage accounts and payments anywhere, anytime with our mobile app.</p>
         </div>
       </section>
 
       {/* OFFERS SECTION */}
-      <section className="bg-gray-50 py-20 px-6 rounded-md">
+      <section className="bg-white shadow rounded-md p-10">
         <div className="max-w-7xl mx-auto text-center space-y-8">
           <h2 className="text-4xl font-extrabold text-[#E80000]">Offers for You!</h2>
           <p className="text-lg max-w-3xl mx-auto text-gray-700">
             Discover the best deals on credit cards, loans, and investment products tailored for you.
           </p>
           <div className="mt-12 grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded shadow hover:shadow-lg cursor-pointer overflow-hidden">
+            <div className="rounded shadow hover:shadow-lg cursor-pointer overflow-hidden border border-gray-100">
               <img
                 src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=400&q=60"
                 alt="Zero Processing Fee on Home Loans"
@@ -93,7 +93,7 @@ function Home() {
                 <p>Apply now & save up to ₹10,000.</p>
               </div>
             </div>
-            <div className="bg-white rounded shadow hover:shadow-lg cursor-pointer overflow-hidden">
+            <div className="rounded shadow hover:shadow-lg cursor-pointer overflow-hidden border border-gray-100">
               <img
                 src="https://images.unsplash.com/photo-1495121605193-b116b5b09e21?auto=format&fit=crop&w=400&q=60"
                 alt="Earn More with Fixed Deposits"
@@ -104,7 +104,7 @@ function Home() {
                 <p>Attractively higher interest rates on FD.</p>
               </div>
             </div>
-            <div className="bg-white rounded shadow hover:shadow-lg cursor-pointer overflow-hidden">
+            <div className="rounded shadow hover:shadow-lg cursor-pointer overflow-hidden border border-gray-100">
               <img
                 src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=400&q=60"
                 alt="Instant Personal Loans"
@@ -120,11 +120,11 @@ function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="bg-[#FBEAEA] py-20 px-6 mt-16 rounded-md">
+      <section className="bg-white shadow rounded-md p-10">
         <div className="max-w-5xl mx-auto text-center space-y-10">
           <h2 className="text-4xl font-extrabold text-[#E80000]">What Our Customers Say</h2>
           <div className="space-y-10">
-            <div className="bg-white p-8 rounded shadow max-w-xl mx-auto text-left">
+            <div className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
               <div className="flex items-center mb-4 space-x-4">
                 <img
                   src="https://randomuser.me/api/portraits/men/32.jpg"
@@ -137,7 +137,7 @@ function Home() {
                 "ICICI Bank has transformed how I manage my finances. Their app is super easy and customer support is fantastic!"
               </p>
             </div>
-            <div className="bg-white p-8 rounded shadow max-w-xl mx-auto text-left">
+            <div className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
               <div className="flex items-center mb-4 space-x-4">
                 <img
                   src="https://randomuser.me/api/portraits/women/44.jpg"
@@ -150,7 +150,7 @@ function Home() {
                 "The loan process was smooth and quick. I got my funds in less than 24 hours!"
               </p>
             </div>
-            <div className="bg-white p-8 rounded shadow max-w-xl mx-auto text-left">
+            <div className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
               <div className="flex items-center mb-4 space-x-4">
                 <img
                   src="https://randomuser.me/api/portraits/men/45.jpg"
@@ -166,6 +166,11 @@ function Home() {
           </div>
         </div>
       </section>
+
+      {/* FOOTER */}
+      <footer className="bg-[#E80000] text-white py-12 mt-24 rounded-md shadow-inner">
+        <div className="max-w-7xl mx-auto px-6 md:px-0 grid grid-cols
+
 
       {/* FOOTER */}
       <footer className="bg-[#E80000] text-white py-12 mt-24 rounded-md">
