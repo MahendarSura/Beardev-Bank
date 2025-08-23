@@ -2,30 +2,29 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import Footer from "./components/layout/Sidebar";
+import Sidebar from "./components/layout/Sidebar";
 import Home from "./Home"; 
 import Login from "./pages/login";
 import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Navbar */}
-      <Navbar />
-
-      {/* Main content */}
-      <main className="flex-1 max-w-7xl mx-auto px-6 py-8 w-full">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Routes>
-      </main>
-
-      {/* Footer */}
-      <Footer />
-    </div>
-  );
-}
+    <div className="flex h-screen">
+      <Sidebar />
+      <div className="flex-1 flex flex-col">
+        <Navbar />
+        <div className="flex h-screen">
+          <Footer />
+          <div className="flex h-screen">
+            <Login />
+            <div className="flex h-screen">
+              <Home />
+              <main className="p-4 flex-1 overflow-auto">
+               <Dashboard />
+             </main>
+           </div>
+         </div>
+       );
+     }
 
 export default App;
