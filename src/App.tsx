@@ -1,36 +1,22 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import Home from "./pages/index";
-import Login from "./pages/login";
-import Dashboard from "./pages/dashboard";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function App() {
+function Navbar() {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Renders the navigation bar here */}
-      <Navbar />
-
-      {/* Main content section */}
-      <main className="flex-1">
-        {/*
-          Content inside this container will be centered.
-          It provides proper padding and max-width in the middle of the page.
-        */}
-        <div className="max-w-7xl mx-auto px-4 py-8">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-          </Routes>
-        </div>
-      </main>
-
-      {/* Renders the footer here */}
-      <Footer />
-    </div>
+    <nav className="bg-white shadow-md p-4 flex justify-between items-center fixed top-0 left-0 w-full z-10">
+      {/* Website Logo/Name on the left */}
+      <div className="flex items-center space-x-2">
+        <div className="text-2xl font-bold text-blue-600">Beardev-Bank</div>
+      </div>
+      
+      {/* Links on the right side */}
+      <div className="flex space-x-4 items-center">
+        <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors">Home</Link>
+        <Link to="/login" className="text-gray-700 hover:text-blue-600 transition-colors">Login</Link>
+      </div>
+    </nav>
   );
 }
 
-export default App;
+export default Navbar;
+
