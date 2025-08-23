@@ -28,11 +28,8 @@ function App() {
 
         {/* Tailwind test blocks */}
         <div className="mt-8 space-y-4 max-w-7xl mx-auto px-4">
-          <div className="text-axisRed hover-text-axisRed text-2xl font-bold">
-            Axis Red Text
-          </div>
-          <div className="bg-axisRed hover-bg-axisRed p-4 rounded text-white font-semibold">
-            Axis Red Background
+          {/* This div now has no text, keeping only the background color */}
+          <div className="bg-axisRed p-4 rounded text-white font-semibold">
           </div>
         </div>
       </main>
@@ -44,4 +41,3 @@ function App() {
 }
 
 export default App;
-
