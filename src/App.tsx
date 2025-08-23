@@ -8,32 +8,20 @@ import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
-    <div className="flex-1 p-4 max-w-7xl mx-auto">
-      {/* NAVBAR */}
+    <div className="min-h-screen flex flex-col">
+      {/* Navbar */}
       <Navbar />
 
-      <main className="flex-1 p-4">
-        {/* Added container div with max width and centering */}
-        <div className="max-w-7xl mx-auto">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-          </Routes>
-
-          {/* Tailwind test blocks */}
-          <div className="mt-8 space-y-4">
-            <div className="text-axisRed hover-text-axisRed text-2xl font-bold">
-              Axis Red Text
-            </div>
-            <div className="bg-axisRed hover-bg-axisRed p-4 rounded text-white font-semibold">
-              Axis Red Background
-            </div>
-          </div>
-        </div>
+      {/* Main content */}
+      <main className="flex-1 max-w-7xl mx-auto px-6 py-8 w-full">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
       </main>
 
-      {/* FOOTER */}
+      {/* Footer */}
       <Footer />
     </div>
   );
