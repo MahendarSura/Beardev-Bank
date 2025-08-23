@@ -19,7 +19,7 @@ function App() {
           It sets a max-width, centers the content, and adds padding.
         */}
         <div className="max-w-7xl mx-auto px-4">
-          <Routes>
+          
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
@@ -32,7 +32,7 @@ function App() {
             Axis Red Text
           </div>
           <div className="bg-axisRed hover-bg-axisRed p-4 rounded text-white font-semibold">
-            Axis Red Background
+            
           </div>
         </div>
       </main>
