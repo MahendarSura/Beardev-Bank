@@ -4,141 +4,131 @@ function Home() {
   return (
     <>
       {/*
-        Home page's main content.
-        This section should not contain the navigation bar or footer.
+        This component contains the main content of the home page.
+        It does not include the Navbar or Footer as they are handled by App.tsx.
       */}
 
       {/* Hero Section */}
-      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-red-700 to-red-600 flex items-center px-10 text-white my-16 w-full rounded-lg shadow-lg">
-        <div className="w-full flex flex-col md:flex-row items-center gap-10">
-          <div className="max-w-3xl space-y-6">
-            <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
-            <p className="text-xl max-w-xl">
-              Seamless, secure, and personalized banking experience at Beardev-Bank. Explore our services today.
-            </p>
-            <div className="flex space-x-6">
-              <button className="bg-white text-axisRed font-bold px-8 py-3 rounded hover:bg-gray-100 transition">Open an Account</button>
-              <button className="border-2 border-white text-white font-bold px-8 py-3 rounded hover:bg-white hover:text-axisRed transition">Learn More</button>
-            </div>
+      <section className="bg-blue-600 text-white py-20 rounded-lg shadow-lg">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-4">
+            Reimagine Your Finances with Beardev-Bank
+          </h1>
+          <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-8 opacity-90">
+            A secure and seamless banking experience tailored just for you.
+          </p>
+          <div className="flex justify-center space-x-4">
+            <button className="bg-white text-blue-600 font-bold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition-colors">
+              Open an Account
+            </button>
+            <button className="bg-transparent border-2 border-white text-white font-bold px-6 py-3 rounded-full hover:bg-white hover:text-blue-600 transition-colors">
+              Explore Products
+            </button>
           </div>
-          <div className="flex-1 hidden md:block">
+        </div>
+      </section>
+
+      {/* Key Products/Services Grid */}
+      <section className="mt-16">
+        <h2 className="text-3xl font-bold text-center mb-10">Our Products</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow">
+            <div className="text-4xl text-blue-600 mb-4">🏦</div>
+            <h3 className="text-xl font-semibold mb-2">Savings Accounts</h3>
+            <p className="text-gray-600">
+              High interest rates with flexible withdrawal options.
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow">
+            <div className="text-4xl text-blue-600 mb-4">💳</div>
+            <h3 className="text-xl font-semibold mb-2">Credit Cards</h3>
+            <p className="text-gray-600">
+              Exclusive rewards and benefits for every transaction.
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow">
+            <div className="text-4xl text-blue-600 mb-4">💰</div>
+            <h3 className="text-xl font-semibold mb-2">Personal Loans</h3>
+            <p className="text-gray-600">
+              Quick and easy loans with minimal documentation.
+            </p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow">
+            <div className="text-4xl text-blue-600 mb-4">🏠</div>
+            <h3 className="text-xl font-semibold mb-2">Home Loans</h3>
+            <p className="text-gray-600">
+              Dream of your own home, made easy with our low interest rates.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Digital Banking Section */}
+      <section className="mt-20">
+        <div className="bg-white p-10 rounded-lg shadow-md grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-3xl font-bold mb-4">Banking at Your Fingertips</h2>
+            <p className="text-gray-700 mb-6">
+              Our award-winning mobile app allows you to manage your accounts,
+              make payments, and invest from anywhere in the world.
+            </p>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Instant fund transfers</li>
+              <li>Bill payments and recharges</li>
+              <li>Portfolio management</li>
+              <li>Secure biometric login</li>
+            </ul>
+          </div>
+          <div className="flex justify-center md:justify-end">
             <img
-              src="https://images.unsplash.com/photo-1515165562835-c48f9bb46a3d?auto=format&fit=crop&w=800&q=80"
-              alt="Digital Banking"
-              className="rounded shadow-xl"
+              src="https://images.unsplash.com/photo-1549692520-acc6669e2363?auto=format&fit=crop&w=600&q=80"
+              alt="Beardev-Bank Mobile App"
+              className="rounded-lg shadow-lg w-full max-w-sm"
             />
           </div>
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="bg-white shadow rounded-md p-8 grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
-        <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
-          <div className="text-5xl mb-4 text-[#E80000]">🏦</div>
-          <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Accounts</h3>
-          <p>Savings accounts, checking accounts, debit cards & more.</p>
-        </div>
-        <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
-          <div className="text-5xl mb-4 text-[#E80000]">💳</div>
-          <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Credit Cards</h3>
-          <p>Credit cards with attractive rewards and benefits.</p>
-        </div>
-        <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
-          <div className="text-5xl mb-4 text-[#E80000]">💰</div>
-          <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Loans</h3>
-          <p>Home loans, personal loans, and car loans with competitive rates.</p>
-        </div>
-        <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
-          <div className="text-5xl mb-4 text-[#E80000]">📱</div>
-          <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Digital Banking</h3>
-          <p>Manage accounts and payments anywhere, anytime with our mobile app.</p>
-        </div>
-      </section>
-
-      {/* Offers Section */}
-      <section className="bg-white shadow rounded-md p-10 my-16 w-full">
-        <div className="text-center space-y-8">
-          <h2 className="text-4xl font-extrabold text-[#E80000]">Offers for You!</h2>
-          <p className="text-lg max-w-3xl mx-auto text-gray-700">
-            Discover the best deals on credit cards, loans, and investment products tailored for you.
-          </p>
-          <div className="mt-12 grid md:grid-cols-3 gap-8">
-            <div className="rounded shadow hover:shadow-lg cursor-pointer overflow-hidden border border-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=400&q=60"
-                alt="Zero Processing Fee on Home Loans"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6 text-left">
-                <h3 className="text-2xl font-semibold mb-2 text-[#E80000]">Zero Processing Fee on Home Loans</h3>
-                <p>Apply now & save up to ₹10,000.</p>
-              </div>
-            </div>
-            <div className="rounded shadow hover:shadow-lg cursor-pointer overflow-hidden border border-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1495121605193-b116b5b09e21?auto=format&fit=crop&w=400&q=60"
-                alt="Earn More with Fixed Deposits"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6 text-left">
-                <h3 className="text-2xl font-semibold mb-2 text-[#E80000]">Earn More with Fixed Deposits</h3>
-                <p>Attractively higher interest rates on FD.</p>
-              </div>
-            </div>
-            <div className="rounded shadow hover:shadow-lg cursor-pointer overflow-hidden border border-gray-100">
-              <img
-                src="https://images.unsplash.com/photo-1556741533-f6acd647d2fb?auto=format&fit=crop&w=400&q=60"
-                alt="Instant Personal Loans"
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6 text-left">
-                <h3 className="text-2xl font-semibold mb-2 text-[#E80000]">Instant Personal Loans</h3>
-                <p>Get funds within 24 hours at competitive rates.</p>
-              </div>
+      {/* Latest Offers Section */}
+      <section className="mt-20">
+        <h2 className="text-3xl font-bold text-center mb-10">Exclusive Offers</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=400&q=80"
+              alt="Special Home Loan Rates"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-2">Special Home Loan Rates</h3>
+              <p className="text-gray-600">
+                Get the lowest interest rates on home loans for a limited time.
+              </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="bg-white shadow rounded-md p-10 my-16 w-full">
-        <div className="text-center space-y-10">
-          <h2 className="text-4xl font-extrabold text-[#E80000]">What Our Customers Say</h2>
-          <div className="space-y-10">
-            <div className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
-              <div className="flex items-center mb-4 space-x-4">
-                <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Rajesh Kumar"
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <h3 className="text-xl font-semibold text-[#E80000]">Rajesh Kumar</h3>
-              </div>
-              <p className="italic text-gray-900">
-                "ICICI Bank has transformed how I manage my finances. Their app is super easy and customer support is fantastic!"
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1563986768605-da4d1480bd7e?auto=format&fit=crop&w=400&q=80"
+              alt="Cashback on Credit Cards"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-2">Cashback on Credit Cards</h3>
+              <p className="text-gray-600">
+                Earn 5% cashback on all online purchases with your new card.
               </p>
             </div>
-            <div className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
-              <div className="flex items-center mb-4 space-x-4">
-                <img
-                  src="https://randomuser.me/api/portraits/women/44.jpg"
-                  alt="Sneha Patil"
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <h3 className="text-xl font-semibold text-[#E80000]">Sneha Patil</h3>
-              </p>
-            </div>
-            <div className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
-              <div className="flex items-center mb-4 space-x-4">
-                <img
-                  src="https://randomuser.me/api/portraits/men/45.jpg"
-                  alt="Aditya Sharma"
-                  className="w-16 h-16 rounded-full object-cover"
-                />
-                <h3 className="text-xl font-semibold text-[#E80000]">Aditya Sharma</h3>
-              </div>
-              <p className="italic text-gray-900">
-                "Investments made simple! The advice and tools helped me grow my portfolio confidently."
+          </div>
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1587570417749-e362c3e1e9c2?auto=format&fit=crop&w=400&q=80"
+              alt="Refer and Earn"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h3 className="text-xl font-semibold mb-2">Refer & Earn</h3>
+              <p className="text-gray-600">
+                Refer a friend and get ₹500 directly in your account.
               </p>
             </div>
           </div>
