@@ -1,22 +1,46 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Home from "./pages/index"; // Assuming your Home component is in src/pages/index.tsx
+import Login from "./pages/login";
+import Dashboard from "./pages/dashboard";
 
-function Navbar() {
+function App() {
   return (
-    <nav className="bg-white shadow-md p-4 flex justify-between items-center fixed top-0 left-0 w-full z-10">
-      {/* Website Logo/Name on the left */}
-      <div className="flex items-center space-x-2">
-        <div className="text-2xl font-bold text-blue-600">Beardev-Bank</div>
-      </div>
-      
-      {/* Links on the right side */}
-      <div className="flex space-x-4 items-center">
-        <Link to="/" className="text-gray-700 hover:text-blue-600 transition-colors">Home</Link>
-        <Link to="/login" className="text-gray-700 hover:text-blue-600 transition-colors">Login</Link>
-      </div>
-    </nav>
+    <div className="min-h-screen flex flex-col">
+      {/* NAVBAR */}
+      <Navbar />
+
+      {/* Main content section */}
+      <main className="flex-1 p-4">
+        {/*
+          This new div is the key to centering your content.
+          It sets a max-width, centers the content, and adds padding.
+        */}
+        <div className="max-w-7xl mx-auto px-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Routes>
+        </div>
+
+        {/* Tailwind test blocks */}
+        <div className="mt-8 space-y-4 max-w-7xl mx-auto px-4">
+          <div className="text-axisRed hover-text-axisRed text-2xl font-bold">
+            Axis Red Text
+          </div>
+          <div className="bg-axisRed hover-bg-axisRed p-4 rounded text-white font-semibold">
+            Axis Red Background
+          </div>
+        </div>
+      </main>
+
+      {/* FOOTER */}
+      <Footer />
+    </div>
   );
 }
 
-export default Navbar;
-
+export default App;
