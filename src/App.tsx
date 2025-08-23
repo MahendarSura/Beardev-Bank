@@ -1,8 +1,10 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import Home from "./Home";
-import Login from "./pages/Login";       
-import Dashboard from "./pages/Dashboard"; 
+import Home from "./Home"; 
+import Login from "./pages/login";
+import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
