@@ -168,11 +168,6 @@ function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#E80000] text-white py-12 mt-24 rounded-md shadow-inner">
-        <div className="max-w-7xl mx-auto px-6 md:px-0 grid grid-cols
-
-
-      {/* FOOTER */}
       <footer className="bg-[#E80000] text-white py-12 mt-24 rounded-md">
         <div className="max-w-7xl mx-auto px-6 md:px-0 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
