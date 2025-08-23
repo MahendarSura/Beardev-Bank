@@ -1,49 +1,54 @@
+Home.tsx   
+
+
 import React from "react";
 
 function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen font-sans">
-      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col space-y-10">
+    <div className="max-w-7xl mx-auto px-6 py-12 font-sans bg-white">
 
-        {/* NAVBAR */}
-        <nav className="bg-white shadow rounded-md flex flex-col md:flex-row md:items-center md:justify-between py-4 px-6 border border-gray-200">
-          <div className="text-3xl font-extrabold text-[#E80000] cursor-pointer mb-4 md:mb-0">
-            ICICI Bank
-          </div>
-          <ul className="flex flex-wrap justify-center md:justify-end md:space-x-8 font-semibold text-gray-700">
-            <li className="hover:text-[#E80000] cursor-pointer">Personal</li>
-            <li className="hover:text-[#E80000] cursor-pointer">NRI</li>
-            <li className="hover:text-[#E80000] cursor-pointer">Business</li>
-            <li className="hover:text-[#E80000] cursor-pointer">iShop</li>
-            <li className="hover:text-[#E80000] cursor-pointer">Resources</li>
-            <li className="hover:text-[#E80000] cursor-pointer">About</li>
-            <li className="hover:text-[#E80000] cursor-pointer">Help</li>
-            <li className="hover:text-[#E80000] cursor-pointer">Complaints</li>
-          </ul>
-          <div className="text-[#E80000] font-semibold cursor-pointer hover:underline mt-4 md:mt-0 md:ml-6">
-            Login
-          </div>
-        </nav>
+      {/* NAVBAR */}
+      <nav className="flex items-center justify-between mb-12">
+        <div className="text-5xl font-extrabold text-axisRed">Beardev Bank</div>
+        <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
+          <li className="hover:text-axisRed cursor-pointer">Explore products</li>
+          <li className="hover:text-axisRed cursor-pointer">Grab Deal</li>
+          <li className="hover:text-axisRed cursor-pointer">Make Payments</li>
+          <li className="hover:text-axisRed cursor-pointer">Bank Smart</li>
+          <li className="hover:text-axisRed cursor-pointer">Accounts</li>
+          <li className="hover:text-axisRed cursor-pointer">Deposits</li>
+          <li className="hover:text-axisRed cursor-pointer">Cards</li>
+          <li className="hover:text-axisRed cursor-pointer">Loans</li>
+          <li className="hover:text-axisRed cursor-pointer">Investments</li>
+          <li className="hover:text-axisRed cursor-pointer">Insurance</li>
+          <li className="hover:text-axisRed cursor-pointer">Special Services</li>
+          <li className="hover:text-axisRed cursor-pointer">Knowledge Hub</li>
+        </ul>
+        <div className="text-axisRed font-semibold cursor-pointer hover:underline">Login/Signup</div>
+      </nav>
 
-        {/* HERO SECTION */}
-        <section className="bg-white shadow rounded-md p-8 flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* Content Left */}
-          <div className="flex-1 max-w-xl text-center md:text-left">
-            <h1 className="text-5xl font-extrabold text-[#E80000] mb-6 leading-tight">
-              Truth, Trust, Transparency
-            </h1>
-            <p className="text-lg mb-6 text-gray-800">
-              Experience seamless, secure, and personalized banking with ICICI Bank. Your financial growth is our priority.
+      {/* HERO SECTION */}
+      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-red-700 to-red-600 flex items-center px-10 text-white mb-16 rounded-lg shadow-lg">
+        <div className="flex flex-col md:flex-row items-center gap-10 w-full">
+          <div className="max-w-3xl space-y-6">
+            <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
+            <p className="text-xl max-w-xl">
+              Seamless, secure, and personalized banking experience at Beardev-Bank. Explore our services today.
             </p>
-            <div className="flex justify-center md:justify-start space-x-6">
-              <button className="bg-[#E80000] text-white font-bold px-8 py-3 rounded hover:bg-red-700 transition">
-                Open an Account
-              </button>
-              <button className="border-2 border-[#E80000] text-[#E80000] font-bold px-8 py-3 rounded hover:bg-[#E80000] hover:text-white transition">
-                Learn More
-              </button>
+            <div className="flex space-x-6">
+              <button className="bg-white text-axisRed font-bold px-8 py-3 rounded hover:bg-gray-100 transition">Open an Account</button>
+              <button className="border-2 border-white text-white font-bold px-8 py-3 rounded hover:bg-white hover:text-axisRed transition">Learn More</button>
             </div>
           </div>
+          <div className="flex-1 hidden md:block">
+            <img
+              src="https://images.unsplash.com/photo-1515165562835-c48f9bb46a3d?auto=format&fit=crop&w=800&q=80"
+              alt="Digital Banking"
+              className="rounded shadow-xl"
+            />
+          </div>
+        </div>
+      </section>
 
         {/* Image Right */}
         <div className="flex-1 flex justify-center">
