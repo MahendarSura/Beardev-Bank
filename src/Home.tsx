@@ -2,24 +2,28 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-8 font-sans bg-gray-100 min-h-screen flex flex-col space-y-10">
+    <div className="bg-gray-100 min-h-screen font-sans">
+      <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col space-y-10">
 
-      {/* NAVBAR */}
-      <nav className="bg-white shadow rounded-md flex items-center justify-between py-4 px-6 border border-gray-200">
-        <div className="text-3xl font-extrabold text-[#E80000] cursor-pointer">ICICI Bank</div>
-        <ul className="hidden md:flex space-x-8 font-semibold text-gray-700">
-          <li className="hover:text-[#E80000] cursor-pointer">Personal</li>
-          <li className="hover:text-[#E80000] cursor-pointer">NRI</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Business</li>
-          <li className="hover:text-[#E80000] cursor-pointer">iShop</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Resources</li>
-          <li className="hover:text-[#E80000] cursor-pointer">About</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Help</li>
-          <li className="hover:text-[#E80000] cursor-pointer">Complaints</li>
-        </ul>
-        {/* LOGIN TOP RIGHT */}
-        <div className="text-[#E80000] font-semibold cursor-pointer hover:underline">Login</div>
-      </nav>
+        {/* NAVBAR */}
+        <nav className="bg-white shadow rounded-md flex flex-col md:flex-row md:items-center md:justify-between py-4 px-6 border border-gray-200">
+          <div className="text-3xl font-extrabold text-[#E80000] cursor-pointer mb-4 md:mb-0">
+            ICICI Bank
+          </div>
+          <ul className="flex flex-wrap justify-center md:justify-end md:space-x-8 font-semibold text-gray-700">
+            <li className="hover:text-[#E80000] cursor-pointer">Personal</li>
+            <li className="hover:text-[#E80000] cursor-pointer">NRI</li>
+            <li className="hover:text-[#E80000] cursor-pointer">Business</li>
+            <li className="hover:text-[#E80000] cursor-pointer">iShop</li>
+            <li className="hover:text-[#E80000] cursor-pointer">Resources</li>
+            <li className="hover:text-[#E80000] cursor-pointer">About</li>
+            <li className="hover:text-[#E80000] cursor-pointer">Help</li>
+            <li className="hover:text-[#E80000] cursor-pointer">Complaints</li>
+          </ul>
+          <div className="text-[#E80000] font-semibold cursor-pointer hover:underline mt-4 md:mt-0 md:ml-6">
+            Login
+          </div>
+        </nav>
 
       {/* HERO SECTION */}
       <section className="bg-white shadow rounded-md p-8 flex flex-col md:flex-row items-center md:items-center justify-between gap-10">
