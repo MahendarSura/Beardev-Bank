@@ -8,7 +8,7 @@ import Dashboard from "./pages/dashboard";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="flex-1 p-4 max-w-7xl mx-auto">
       {/* NAVBAR */}
       <Navbar />
 
