@@ -50,16 +50,6 @@ function Home() {
         </div>
       </section>
 
-        {/* Image Right */}
-        <div className="flex-1 flex justify-center">
-          <img
-            src="https://images.unsplash.com/photo-1515165562835-c48f9bb46a3d?auto=format&fit=crop&w=600&q=80"
-            alt="Digital Banking"
-            className="rounded-lg shadow max-w-full h-auto object-cover"
-          />
-        </div>
-      </section>
-
       {/* SERVICES SECTION */}
       <section className="bg-white shadow rounded-md p-8 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Same content */}
