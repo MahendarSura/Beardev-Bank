@@ -25,25 +25,25 @@ function Home() {
           </div>
         </nav>
 
-      {/* HERO SECTION */}
-      <section className="bg-white shadow rounded-md p-8 flex flex-col md:flex-row items-center md:items-center justify-between gap-10">
-        {/* Content Left */}
-        <div className="flex-1 max-w-xl text-center md:text-left">
-          <h1 className="text-5xl font-extrabold text-[#E80000] mb-6 leading-tight">
-            Truth, Trust, Transparency
-          </h1>
-          <p className="text-lg mb-6 text-gray-800">
-            Experience seamless, secure, and personalized banking with ICICI Bank. Your financial growth is our priority.
-          </p>
-          <div className="flex justify-center md:justify-start space-x-6">
-            <button className="bg-[#E80000] text-white font-bold px-8 py-3 rounded hover:bg-red-700 transition">
-              Open an Account
-            </button>
-            <button className="border-2 border-[#E80000] text-[#E80000] font-bold px-8 py-3 rounded hover:bg-[#E80000] hover:text-white transition">
-              Learn More
-            </button>
+        {/* HERO SECTION */}
+        <section className="bg-white shadow rounded-md p-8 flex flex-col md:flex-row items-center justify-between gap-10">
+          {/* Content Left */}
+          <div className="flex-1 max-w-xl text-center md:text-left">
+            <h1 className="text-5xl font-extrabold text-[#E80000] mb-6 leading-tight">
+              Truth, Trust, Transparency
+            </h1>
+            <p className="text-lg mb-6 text-gray-800">
+              Experience seamless, secure, and personalized banking with ICICI Bank. Your financial growth is our priority.
+            </p>
+            <div className="flex justify-center md:justify-start space-x-6">
+              <button className="bg-[#E80000] text-white font-bold px-8 py-3 rounded hover:bg-red-700 transition">
+                Open an Account
+              </button>
+              <button className="border-2 border-[#E80000] text-[#E80000] font-bold px-8 py-3 rounded hover:bg-[#E80000] hover:text-white transition">
+                Learn More
+              </button>
+            </div>
           </div>
-        </div>
 
         {/* Image Right */}
         <div className="flex-1 flex justify-center">
