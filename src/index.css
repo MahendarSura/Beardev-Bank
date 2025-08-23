@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
 /* Global Styles */
 body {
@@ -17,4 +16,4 @@ body {
 .text-axisRed { color: #E2001A; }
 .hover-text-axisRed:hover { color: #E2001A; }
 .bg-axisRed { background-color: #E2001A; }
-.hover-bg-axisRed:hover { background-color: #E2001A; } 
+.hover-bg-axisRed:hover { background-color: #E2001A; }
