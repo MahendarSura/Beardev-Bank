@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import index from "./pages/index"; // Assuming your Home page is at src/pages/index.tsx
+import Home from "./Home"; 
 import Login from "./pages/login";
 import Dashboard from "./pages/dashboard";
 
