@@ -1,5 +1,4 @@
 import React from "react";
-import './AxisBankOverride.css';  // <-- Import CSS here
 
 function Home() {
   return (
@@ -105,7 +104,7 @@ function Home() {
         </div>
       </section>
 
-       {/* TESTIMONIALS SECTION */}
+      {/* TESTIMONIALS SECTION */}
       <section className="bg-rose-50 py-20 px-10 mt-16 rounded">
         <div className="max-w-5xl mx-auto text-center space-y-10">
           <h2 className="text-4xl font-extrabold text-axisRed">What Our Customers Say</h2>
