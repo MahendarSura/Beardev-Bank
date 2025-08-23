@@ -2,45 +2,15 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center font-sans">
-      <div className="max-w-3xl bg-white p-8 rounded shadow-md text-center">
-        <h1 className="text-4xl font-bold text-[#E2001A] mb-6">Welcome to Beardev Bank</h1>
-        <p className="mb-6 text-gray-700 text-lg">
-          Experience seamless and secure banking tailored for you.
-        </p>
-        <div className="flex justify-center space-x-4">
-          <button className="bg-axisRed text-white px-6 py-3 rounded hover:bg-red-700 transition">
-            Open an Account
-          </button>
-          <button className="border border-axisRed text-axisRed px-6 py-3 rounded hover:bg-axisRed hover:text-white transition">
-            Learn More
-          </button>
-        </div>
-      </div>
+    <>
+      {/*
+        Home page's main content.
+        This section should not contain the navigation bar or footer.
+      */}
 
-      {/* NAVBAR */}
-      <nav className="flex items-center justify-between mb-12">
-        <div className="text-5xl font-extrabold text-axisRed">Beardev Bank</div>
-        <ul className="hidden md:flex space-x-10 font-semibold text-gray-700">
-          <li className="hover:text-axisRed cursor-pointer">Explore products</li>
-          <li className="hover:text-axisRed cursor-pointer">Grab Deal</li>
-          <li className="hover:text-axisRed cursor-pointer">Make Payments</li>
-          <li className="hover:text-axisRed cursor-pointer">Bank Smart</li>
-          <li className="hover:text-axisRed cursor-pointer">Accounts</li>
-          <li className="hover:text-axisRed cursor-pointer">Deposits</li>
-          <li className="hover:text-axisRed cursor-pointer">Cards</li>
-          <li className="hover:text-axisRed cursor-pointer">Loans</li>
-          <li className="hover:text-axisRed cursor-pointer">Investments</li>
-          <li className="hover:text-axisRed cursor-pointer">Insurance</li>
-          <li className="hover:text-axisRed cursor-pointer">Special Services</li>
-          <li className="hover:text-axisRed cursor-pointer">Knowledge Hub</li>
-        </ul>
-        <div className="text-axisRed font-semibold cursor-pointer hover:underline">Login/Signup</div>
-      </nav>
-
-      {/* HERO SECTION */}
-      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-red-700 to-red-600 flex items-center px-10 text-white mb-16 rounded-lg shadow-lg">
-        <div className="flex flex-col md:flex-row items-center gap-10 w-full">
+      {/* Hero Section */}
+      <section className="relative h-[480px] md:h-[600px] bg-gradient-to-r from-red-700 to-red-600 flex items-center px-10 text-white my-16 w-full rounded-lg shadow-lg">
+        <div className="w-full flex flex-col md:flex-row items-center gap-10">
           <div className="max-w-3xl space-y-6">
             <h1 className="text-5xl font-extrabold">Reimagining Banking for You</h1>
             <p className="text-xl max-w-xl">
@@ -61,9 +31,8 @@ function Home() {
         </div>
       </section>
 
-      {/* SERVICES SECTION */}
-      <section className="bg-white shadow rounded-md p-8 grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Same content */}
+      {/* Services Section */}
+      <section className="bg-white shadow rounded-md p-8 grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
         <div className="flex flex-col items-start hover:shadow-lg cursor-pointer transition p-6 border border-gray-100 rounded">
           <div className="text-5xl mb-4 text-[#E80000]">🏦</div>
           <h3 className="text-2xl font-bold mb-2 text-[#E80000]">Accounts</h3>
@@ -86,15 +55,14 @@ function Home() {
         </div>
       </section>
 
-      {/* OFFERS SECTION */}
-      <section className="bg-white shadow rounded-md p-10">
-        <div className="max-w-7xl mx-auto text-center space-y-8">
+      {/* Offers Section */}
+      <section className="bg-white shadow rounded-md p-10 my-16 w-full">
+        <div className="text-center space-y-8">
           <h2 className="text-4xl font-extrabold text-[#E80000]">Offers for You!</h2>
           <p className="text-lg max-w-3xl mx-auto text-gray-700">
             Discover the best deals on credit cards, loans, and investment products tailored for you.
           </p>
           <div className="mt-12 grid md:grid-cols-3 gap-8">
-            {/* Same content */}
             <div className="rounded shadow hover:shadow-lg cursor-pointer overflow-hidden border border-gray-100">
               <img
                 src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=400&q=60"
@@ -132,12 +100,11 @@ function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIALS */}
-      <section className="bg-white shadow rounded-md p-10">
-        <div className="max-w-5xl mx-auto text-center space-y-10">
+      {/* Testimonials */}
+      <section className="bg-white shadow rounded-md p-10 my-16 w-full">
+        <div className="text-center space-y-10">
           <h2 className="text-4xl font-extrabold text-[#E80000]">What Our Customers Say</h2>
           <div className="space-y-10">
-            {/* Testimonials cards */}
             <div className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
               <div className="flex items-center mb-4 space-x-4">
                 <img
@@ -159,9 +126,6 @@ function Home() {
                   className="w-16 h-16 rounded-full object-cover"
                 />
                 <h3 className="text-xl font-semibold text-[#E80000]">Sneha Patil</h3>
-              </div>
-              <p className="italic text-gray-900">
-                "The loan process was smooth and quick. I got my funds in less than 24 hours!"
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded shadow max-w-xl mx-auto text-left border border-gray-200">
@@ -180,54 +144,7 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer Section */}
-      <footer className="bg-[#4169E1] text-white pt-12 pb-6 mt-16 w-full">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-sm">
-
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-lg font-semibold mb-3">Quick Links</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="hover:underline">Home</a></li>
-                <li><a href="#" className="hover:underline">About</a></li>
-                <li><a href="#" className="hover:underline">Services</a></li>
-                <li><a href="#" className="hover:underline">Contact</a></li>
-              </ul>
-            </div>
-
-            {/* Contact & Social */}
-            <div>
-              <h3 className="text-lg font-semibold mb-3">Contact Us</h3>
-              <p className="mb-1">beardevbank@gmail.com</p>
-              <p className="mb-1">beardevbank.in</p>
-              <p className="mb-4">Fully remote — available worldwide.</p>
-              <div className="flex space-x-4 mt-2">
-                <a href="#" aria-label="LinkedIn" className="hover:text-orange-400">
-                  <i className="fab fa-linkedin fa-lg"></i>
-                </a>
-                <a href="#" aria-label="Twitter" className="hover:text-orange-400">
-                  <i className="fab fa-twitter fa-lg"></i>
-                </a>
-                <a href="#" aria-label="Instagram" className="hover:text-orange-400">
-                  <i className="fab fa-instagram fa-lg"></i>
-                </a>
-                <a href="#" aria-label="GitHub" className="hover:text-orange-400">
-                  <i className="fab fa-github fa-lg"></i>
-                </a>
-              </div>
-            </div>
-
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="mt-12 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
-            © 2025 beardev-Bnak - All Rights Reserved.
-          </div>
-        </div>
-      </footer>
-    </div>
+    </>
   );
 }
 
