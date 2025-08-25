@@ -1,8 +1,6 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import Home from "./pages/index"; // Assuming your Home component is in src/pages/index.tsx
+import Navbar from "./layout/Navbar";
+import Footer from "./layout/Footer";
+import Home from "./pages/index";  // Home page as src/pages/index.tsx
 import Login from "./pages/login";
 import Dashboard from "./pages/dashboard";
 
