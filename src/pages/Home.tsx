@@ -1,9 +1,14 @@
 
 import React from "react";
 
-function Home() {
+export default function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 border-4 border-red-500">
+    <div className="max-w-3xl mx-auto border-4 border-red-500 p-8 mt-20">
+      <h1 className="text-center text-4xl font-bold mb-4">Centered Home Page</h1>
+      <p className="text-center">This container should be centered horizontally.</p>
+    </div>
+  );
+}
 
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
