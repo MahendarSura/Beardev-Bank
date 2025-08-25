@@ -23,10 +23,6 @@ function App() {
         */}
         <div className="max-w-7xl mx-auto px-4 py-8">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-          </Routes>
           
           {/* The Tailwind test blocks are now inside the main centered container */}
           <div className="mt-8 space-y-4">
