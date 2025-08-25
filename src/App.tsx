@@ -1,30 +1,32 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-import Home from "./pages/index"; 
-import Login from "./pages/login";
-import Dashboard from "./pages/dashboard";
-
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="min-h-screen flex flex-col">
+      {/* Navbar */}
       <Navbar />
 
-      {/* 👇 Main Content Area */}
-      <main className="flex-1 bg-gray-100 flex justify-center">
-        <div className="w-full max-w-7xl px-4">
+      {/* Main content */}
+      <main className="flex flex-col items-center px-4 flex-grow">
+        <div className="w-full max-w-7xl">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </div>
+
+        {/* Test blocks */}
+        <div className="mt-8 space-y-4 w-full max-w-7xl">
+          <div className="text-axisRed hover-text-axisRed text-2xl font-bold text-center">
+            Axis Red Text
+          </div>
+          <div className="bg-axisRed hover-bg-axisRed p-4 rounded text-white font-semibold text-center">
+            Axis Red Background
+          </div>
+        </div>
       </main>
 
+      {/* Footer */}
       <Footer />
     </div>
   );
 }
-
-export default App;
