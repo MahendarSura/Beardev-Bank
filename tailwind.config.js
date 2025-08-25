@@ -1,5 +1,14 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  theme: { extend: {} },
+  theme: {
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        lg: "2rem",
+      },
+    },
+    extend: {},
+  },
   plugins: [],
 };
