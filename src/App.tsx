@@ -1,12 +1,24 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Home from "./pages/index"; // Assuming your Home component is in src/pages/index.tsx
+import Login from "./pages/login";
+import Dashboard from "./pages/dashboard";
+
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Navbar */}
+      {/* NAVBAR */}
       <Navbar />
 
-      {/* Main content */}
-      <main className="flex flex-col items-center px-4 flex-grow">
-        <div className="w-full max-w-7xl">
+      {/* Main content section */}
+      <main className="flex-1 p-4">
+        {/*
+          This new div is the key to centering your content.
+          It sets a max-width, centers the content, and adds padding.
+        */}
+        <div className="max-w-7xl mx-auto px-4">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
@@ -14,19 +26,22 @@ function App() {
           </Routes>
         </div>
 
-        {/* Test blocks */}
-        <div className="mt-8 space-y-4 w-full max-w-7xl">
-          <div className="text-axisRed hover-text-axisRed text-2xl font-bold text-center">
+        {/* Tailwind test blocks */}
+        <div className="mt-8 space-y-4 max-w-7xl mx-auto px-4">
+          <div className="text-axisRed hover-text-axisRed text-2xl font-bold">
             Axis Red Text
           </div>
-          <div className="bg-axisRed hover-bg-axisRed p-4 rounded text-white font-semibold text-center">
+          <div className="bg-axisRed hover-bg-axisRed p-4 rounded text-white font-semibold">
             Axis Red Background
           </div>
         </div>
       </main>
 
-      {/* Footer */}
+      {/* FOOTER */}
       <Footer />
     </div>
   );
 }
+
+export default App;
+
