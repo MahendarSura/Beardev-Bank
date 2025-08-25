@@ -1,6 +1,6 @@
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
-import Home from "./pages/index";  // Home page as src/pages/index.tsx
+import Home from "./pages/index"; 
 import Login from "./pages/login";
 import Dashboard from "./pages/dashboard";
 
