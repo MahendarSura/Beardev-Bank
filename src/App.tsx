@@ -27,7 +27,10 @@ function App() {
         </div>
 
         {/* Tailwind test blocks */}
-       
+        <div className="mt-8 space-y-4 max-w-7xl mx-auto px-4">
+          <div className="text-axisRed hover-text-axisRed text-2xl font-bold">
+            Axis Red Text
+          </div>
           <div className="bg-axisRed hover-bg-axisRed p-4 rounded text-white font-semibold">
             Axis Red Background
           </div>
@@ -39,5 +42,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
