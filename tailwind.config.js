@@ -1,7 +1,7 @@
 module.exports = {
   content: [
-    "./index.html", // important for Vite
-    "./src/**/*.{js,ts,jsx,tsx}", // include everything under src
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
