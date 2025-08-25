@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";  // <-- Make sure this is imported
+import { Routes, Route } from "react-router-dom";  
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
 import Home from "./pages/index";
