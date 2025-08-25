@@ -1,11 +1,12 @@
-
 import React from "react";
 
-export default function Home() {
+function Home() {
   return (
-    <div className="max-w-3xl mx-auto border-4 border-red-500 p-8 mt-20">
-      <h1 className="text-center text-4xl font-bold mb-4">Centered Home Page</h1>
-      <p className="text-center">This container should be centered horizontally.</p>
+    <div className="text-center">
+      <h1 className="text-5xl font-bold">Welcome to Beardev Bank</h1>
+      <p className="text-lg text-gray-600 mt-4">
+        Reimagining banking with you in mind.
+      </p>
     </div>
   );
 }
