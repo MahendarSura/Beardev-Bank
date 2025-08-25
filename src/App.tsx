@@ -18,6 +18,8 @@ function App() {
         {/* Container centers content and adds padding */}
         <div className="max-w-7xl mx-auto px-4 py-8">
           <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
 
