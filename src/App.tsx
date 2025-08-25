@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MinimalHome from "./MinimalHome";
+import MinimalHome from "./pages/MinimalHome";
 
 function App() {
   return (
