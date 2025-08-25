@@ -1,6 +1,8 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";  // <-- Make sure this is imported
 import Navbar from "./layout/Navbar";
 import Footer from "./layout/Footer";
-import Home from "./pages/index"; 
+import Home from "./pages/index";
 import Login from "./pages/login";
 import Dashboard from "./pages/dashboard";
 
@@ -12,10 +14,6 @@ function App() {
 
       {/* Main content section */}
       <main className="flex-1 p-4">
-        {/*
-          This new div is the key to centering your content.
-          It sets a max-width, centers the content, and adds padding.
-        */}
         <div className="max-w-7xl mx-auto px-4">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -42,4 +40,3 @@ function App() {
 }
 
 export default App;
-
