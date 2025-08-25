@@ -3,7 +3,7 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12">
+    <div className="max-w-7xl mx-auto px-6 py-12 border-4 border-red-500">
 
       {/* NAVBAR */}
       <nav className="flex items-center justify-between mb-12">
