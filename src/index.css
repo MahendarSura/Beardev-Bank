@@ -1,26 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./index.css";
 
-/* Optional: Custom global styles */
-body {
-  @apply bg-gray-100 text-gray-800 font-sans;
-}
-
-h1 {
-  @apply text-3xl font-bold mb-4;
-}
-
-/* Axis Bank Red Colors */
-.text-axisRed {
-  color: #E2001A;
-}
-.hover-text-axisRed:hover {
-  color: #E2001A;
-}
-.bg-axisRed {
-  background-color: #E2001A;
-}
-.hover-bg-axisRed:hover {
-  background-color: #E2001A;
-}
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
