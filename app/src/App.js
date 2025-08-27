@@ -43,32 +43,32 @@ const App = () => {
     {
       title: "Everyday Savings Account",
       desc: "Enjoy offers on BookMyShow, EazyDiner and more.",
-      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_1.jpg"
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_1.png"
     },
     {
       title: "Credit Cards",
       desc: "Rewards | Cashback | EMI Deals",
-      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_2.jpg"
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_2.png"
     },
     {
       title: "3-in-1 Trinity Account",
       desc: "Save, Trade & Invest Smartly",
-      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_3.jpg"
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_3.png"
     },
     {
       title: "Current Account",
       desc: "Power your entrepreneurial dreams. Enjoy simplified transactions and grow the smart way.",
-      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_1.jpg"
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_1.png"
     },
     {
       title: "Business Lending",
       desc: "Not enough funds for your business dreams? Flexible collateral-free loans from ₹3 lakh to ₹1 crore",
-      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_2.jpg"
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_2.png"
     },
     {
       title: "Working Capital",
       desc: "Your big ambitions need smart capital. Answer business opportunities with confidence, thanks to our working capital solutions",
-      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_3.jpg"
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_3.png"
     }
   ];
 
@@ -79,19 +79,19 @@ const App = () => {
     {
       title: "Pay in a Flash!",
       description: "Scan, tap, and pay. Make UPI payments on-the-go with the New Beardev Bank App.",
-      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_1.jpg",
+      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_1.png",
       linkText: "Know more"
     },
     {
       title: "Did you know? One app can do it all!",
       description: "Bank, invest, shop, travel, pay & more with the Beardev Mobile Banking App!",
-      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_2.jpg",
+      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_2.png",
       linkText: "Know More"
     },
     {
       title: "3-IN-1 ACCOUNT",
       description: "Savings + Demat + Trading. Stocks | Bonds | ETFs | IPO",
-      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_3.jpg",
+      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_3.png",
       linkText: "Upgrade Now"
     }
   ];
