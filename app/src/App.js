@@ -165,7 +165,8 @@ const App = () => {
       "Ways to Bank", "Insta Services", "Business & Fintech", "Open Banking"
     ]
   };
-  
+
+  // Then return JSX
   return (
     <div className="bg-gray-100 font-sans min-h-screen">
       <div className="px-4 sm:px-6 lg:px-16 xl:px-20">
