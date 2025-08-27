@@ -1,26 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {
-  Search, User, LifeBuoy, MapPin, ArrowRightCircle, ChevronRight,
-  MessageCircle, BarChart, CreditCard, DollarSign, Bot, Loader,
-  HelpCircle, Phone, Map, AlertTriangle, FileText
-} from 'lucide-react';
-
-// === Local image imports ===
-import everydaySavings from './images/EverydaySavings.png';
-import creditCards from './images/CreditCards.png';
-import trinityAccount from './images/TrinityAccount.png';
-import currentAccount from './images/currentaccount.png';
-import businessLending from './images/BusinessLending.png';
-import workingCapital from './images/WorkingCapital.png';
-
-import payInFlash from './images/PayinFlash!.png';
-import oneApp from './images/oneapp.png';
-import threeInOneAccount from './images/3-IN-1-account.png';
-
-import storiesInFocus from './images/Storiesinfocus.png';
-import dreamHome from './images/dreamhome.png';
-import smallImage from './images/smallimage.png';
-import wideImage from './images/wideimage.png';
+import { Search, User, LifeBuoy, MapPin, ArrowRightCircle, ChevronRight, MessageCircle, BarChart, CreditCard, DollarSign, Bot, Loader } from 'lucide-react';
+import { HelpCircle, Phone, Map, AlertTriangle, FileText } from 'lucide-react';
 
 const App = () => {
   const [messages, setMessages] = useState([
@@ -63,32 +43,32 @@ const App = () => {
     {
       title: "Everyday Savings Account",
       desc: "Enjoy offers on BookMyShow, EazyDiner and more.",
-      img: everydaySavings
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_1.jpg"
     },
     {
       title: "Credit Cards",
       desc: "Rewards | Cashback | EMI Deals",
-      img: creditCards
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_2.jpg"
     },
     {
       title: "3-in-1 Trinity Account",
       desc: "Save, Trade & Invest Smartly",
-      img: trinityAccount
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_3.jpg"
     },
     {
       title: "Current Account",
       desc: "Power your entrepreneurial dreams. Enjoy simplified transactions and grow the smart way.",
-      img: currentAccount
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_1.jpg"
     },
     {
       title: "Business Lending",
       desc: "Not enough funds for your business dreams? Flexible collateral-free loans from ₹3 lakh to ₹1 crore",
-      img: businessLending
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_2.jpg"
     },
     {
       title: "Working Capital",
       desc: "Your big ambitions need smart capital. Answer business opportunities with confidence, thanks to our working capital solutions",
-      img: workingCapital
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_3.jpg"
     }
   ];
 
@@ -99,29 +79,22 @@ const App = () => {
     {
       title: "Pay in a Flash!",
       description: "Scan, tap, and pay. Make UPI payments on-the-go with the New Beardev Bank App.",
-      image: payInFlash,
+      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_1.jpg",
       linkText: "Know more"
     },
     {
       title: "Did you know? One app can do it all!",
       description: "Bank, invest, shop, travel, pay & more with the Beardev Mobile Banking App!",
-      image: oneApp,
+      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_2.jpg",
       linkText: "Know More"
     },
     {
       title: "3-IN-1 ACCOUNT",
       description: "Savings + Demat + Trading. Stocks | Bonds | ETFs | IPO",
-      image: threeInOneAccount,
+      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_3.jpg",
       linkText: "Upgrade Now"
     }
   ];
-
-  return (
-    <div>
-      {/* Your JSX rendering code goes here */}
-    </div>
-  );
-};
 
   const helpOptions = [
     {
@@ -165,8 +138,7 @@ const App = () => {
       "Ways to Bank", "Insta Services", "Business & Fintech", "Open Banking"
     ]
   };
-
-  // Then return JSX
+  
   return (
     <div className="bg-gray-100 font-sans min-h-screen">
       <div className="px-4 sm:px-6 lg:px-16 xl:px-20">
