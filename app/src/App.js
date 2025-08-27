@@ -111,7 +111,7 @@ const App = () => {
     {
       title: "3-IN-1 ACCOUNT",
       description: "Savings + Demat + Trading. Stocks | Bonds | ETFs | IPO",
-      image: 3-IN-1-account,
+      image: threeInOneAccount,
       linkText: "Upgrade Now"
     }
   ];
