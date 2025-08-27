@@ -144,25 +144,25 @@ const App = () => {
       <div className="px-4 sm:px-6 lg:px-16 xl:px-20">
         <header className="bg-red-600 shadow-sm sticky top-0 z-50 text-[12px] -mx-4 sm:-mx-6 lg:-mx-16 xl:-mx-20">
           <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
-            {/* Increased font size for B and Beardev Bank text from text-sm to text-base */}
+            {/* Increased font size for B and Beardev Bank text to xl and lg */}
             <div className="flex items-center space-x-3 min-w-0">
               <div className="flex items-center flex-shrink-0">
-                <span className="bg-white text-red-600 rounded-md p-1 mr-2 font-bold text-base">B</span>
-                <span className="text-base font-bold text-white whitespace-nowrap">Beardev Bank</span>
+                <span className="bg-white text-red-600 rounded-md p-1 mr-2 font-bold text-xl">B</span>
+                <span className="text-lg font-bold text-white whitespace-nowrap">Beardev Bank</span>
               </div>
-              {/* Increased font size for main nav links from text-xs to text-sm */}
-              <nav className="flex items-center space-x-2 font-medium min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap text-sm">
+              {/* Increased font size for main nav links to base */}
+              <nav className="flex items-center space-x-2 font-medium min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap text-base">
                 {["Personal", "Business", "Corporate", "Private Banking", "Privy League", "Solitaire", "NRI Services", "Investors"].map((link) => (
                   <a key={link} href="#" className="text-white hover:underline flex-shrink-0 px-1">{link}</a>
                 ))}
               </nav>
             </div>
-            {/* Increased font size for Login text from text-xs to text-sm */}
+            {/* Increased font size for Login text to base */}
             <div className="flex items-center space-x-2 flex-shrink-0">
               <button className="text-white hover:text-gray-100 p-2 rounded-full transition-colors hidden sm:block">
                 <Search size={16} />
               </button>
-              <button className="bg-white hover:bg-gray-100 text-red-600 font-semibold px-3 py-1 rounded-full flex items-center space-x-1 text-sm shadow-sm transition-colors whitespace-nowrap">
+              <button className="bg-white hover:bg-gray-100 text-red-600 font-semibold px-3 py-1 rounded-full flex items-center space-x-1 text-base shadow-sm transition-colors whitespace-nowrap">
                 <User size={14} />
                 <span>Login</span>
               </button>
@@ -170,14 +170,14 @@ const App = () => {
           </div>
           <div className="bg-white border-t border-gray-200">
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
-              {/* Increased font size for sub-nav links from text-[11px] to text-xs */}
-              <div className="flex items-center space-x-3 text-gray-600 font-medium text-xs min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap">
+              {/* Increased font size for sub-nav links to sm */}
+              <div className="flex items-center space-x-3 text-gray-600 font-medium text-sm min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap">
                 {["Accounts & Deposits", "Cards & Prepaid Services", "Loans", "Investment & Insurance", "Payments & Taxes", "Offers", "Service Request"].map((item) => (
                   <a key={item} href="#" className="hover:text-red-600 flex-shrink-0 px-1">{item}</a>
                 ))}
               </div>
-              {/* Increased font size for Help and Locate links from text-xs to text-sm */}
-              <div className="hidden md:flex items-center space-x-4 text-red-600 font-semibold text-sm whitespace-nowrap">
+              {/* Increased font size for Help and Locate links to base */}
+              <div className="hidden md:flex items-center space-x-4 text-red-600 font-semibold text-base whitespace-nowrap">
                 <a href="#" className="flex items-center space-x-1 hover:underline">
                   <LifeBuoy size={14} /><span>Help Center</span>
                 </a>
