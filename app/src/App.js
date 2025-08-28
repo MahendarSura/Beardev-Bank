@@ -21,6 +21,11 @@ import dreamhomeBanner from './images/dreamHomeBanner.png';
 import oneApp from './images/oneapp.png';
 import smallImage from './images/SmallImage.png';
 import wideImage from './images/WideImage.png';
+import sabbatical from './images/Sabbatical.png';
+import personalLoan from './images/PersonalLoan.png';
+import loanCalculator from './images/LoanCalculator.png';
+import selfEmployed from './images/SelfEmployed.png';
+import financialSetback from './images/FinancialSetback.png';
 
 const App = () => {
   const [messages, setMessages] = useState([
