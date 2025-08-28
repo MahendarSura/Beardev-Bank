@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, User, LifeBuoy, MapPin, ArrowRightCircle, ChevronRight, MessageCircle, BarChart, CreditCard, DollarSign, Bot, Loader } from 'lucide-react';
-import { HelpCircle, Phone, Map, AlertTriangle, FileText } from 'lucide-react';
+import {
+  Search, User, LifeBuoy, MapPin, ArrowRightCircle, ChevronRight, MessageCircle,
+  BarChart, CreditCard, DollarSign, Bot, Loader
+} from 'lucide-react';
+import {
+  HelpCircle, Phone, Map, AlertTriangle, FileText
+} from 'lucide-react';
 
 // Import images from the local src/images folder
 import threeInOneAccount from './images/3-IN-1-account.png';
@@ -108,6 +113,30 @@ const App = () => {
       description: "Savings + Demat + Trading. Stocks | Bonds | ETFs | IPO",
       image: threeInOneAccount,
       linkText: "Upgrade Now"
+    }
+  ];
+
+  // ✅ Added this new array for the hero images section
+  const heroImages = [
+    {
+      title: "At Beardev Bank",
+      description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
+      image: atBeardevbank
+    },
+    {
+      title: "Wide Banner Image",
+      description: "Own your dream home with Beardev Bank's best home loan rates.",
+      image: wideImage
+    },
+    {
+      title: "Own Your Dream",
+      description: "Make your dream home a reality with Beardev Bank.",
+      image: ownyourDream
+    },
+    {
+      title: "Knowledge Hub",
+      description: "Curated stories and financial insights for you.",
+      image: knowledgeHub
     }
   ];
 
