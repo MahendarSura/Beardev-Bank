@@ -131,7 +131,7 @@ const App = () => {
   {
     title: "Own Your Dream",
     description: "Make your dream home a reality with Beardev Bank.",
-    image: ownyourDream
+    image: dreamhomeBanner
   },
   {
     title: "Knowledge Hub",
