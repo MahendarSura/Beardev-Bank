@@ -13,14 +13,14 @@ import businessLending from './images/BusinessLending.png';
 import creditCards from './images/CreditCards.png';
 import everydaySavings from './images/EverydaySavings.png';
 import payinFlash from './images/PayinFlash.png';
-import knowledgeHub from './images/KnowledgeHub.png';
+import knowledgeHub from './images/KnowLedgeHub.png';
 import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
-import ownyourdream from './images/Ownyourdream.png';
+import ownyourDream from './images/OwnYourDream.png';
 import oneApp from './images/oneapp.png';
-import atBeardevBank from './images/AtBeardevBank.png';
-import wideimage from './images/wideimage.png';
+import beardevBank from './images/BeardevBank.png';
+import wideImage from './images/WideImage.png';
 
 const App = () => {
   const [messages, setMessages] = useState([
@@ -121,17 +121,17 @@ const App = () => {
   {
     title: "At Beardev Bank",
     description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
-    image: atBeardevBank
+    image: beardevBank
   },
   {
     title: "Wide Banner Image",
     description: "Own your dream home with Beardev Bank's best home loan rates.",
-    image: wideimage
+    image: wideImage
   },
   {
     title: "Own Your Dream",
     description: "Make your dream home a reality with Beardev Bank.",
-    image: ownyourdream
+    image: ownyourDream
   },
   {
     title: "Knowledge Hub",
