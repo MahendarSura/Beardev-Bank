@@ -8,7 +8,7 @@ import {
 } from 'lucide-react';
 
 // ✅ Correct image imports (case-sensitive)
-import threeInOneAccount from './images/3-IN-1-account.png';
+import threeInOneAccount from './images/3-IN-1-account.png'; 
 import businessLending from './images/BusinessLending.png';
 import creditCards from './images/CreditCards.png';
 import everydaySavings from './images/EverydaySavings.png';
