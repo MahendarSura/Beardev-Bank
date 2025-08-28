@@ -19,7 +19,7 @@ import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
 import dreamhomeBanner from './images/dreamHomeBanner.png';
 import oneApp from './images/oneapp.png';
-import beardevBank from './images/BeardevBank.png';
+import smallImage from './images/SmallImage.png';
 import wideImage from './images/WideImage.png';
 
 const App = () => {
@@ -121,7 +121,7 @@ const App = () => {
   {
     title: "At Beardev Bank",
     description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
-    image: beardevBank
+    image: smallImage
   },
   {
     title: "Wide Banner Image",
