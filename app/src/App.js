@@ -8,7 +8,7 @@ import businessLending from './images/BusinessLending.png';
 import creditCards from './images/CreditCards.png';
 import everydaySavings from './images/EverydaySavings.png';
 import payinFlash from './images/PayinFlash.png';
-import storiesInFocus from './images/Storiesinfocus.png';
+import knowledgehub from './images/KnowledgeHub.png';
 import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
