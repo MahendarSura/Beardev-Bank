@@ -12,7 +12,7 @@ import knowledgehub from './images/KnowledgeHub.png';
 import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
-import Ownyourdream from './images/Ownyourdream.png';
+import ownyourdream from './images/Ownyourdream.png';
 import oneApp from './images/oneapp.png';
 import atbeardevbank from './images/AtBeardevBank.png';
 import wideimage from './images/wideimage.png';
