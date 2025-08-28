@@ -312,7 +312,7 @@ const App = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <p className="text-[10px] text-gray-600 leading-relaxed">
+                    <p className="text-[13px] text-gray-600 leading-relaxed">
                       At <span className="font-semibold">Beardev Bank</span>, we believe in the fearless trailblazers—the ones who dare to dream bigger, push boundaries, and turn challenges into opportunities. That’s why we are here—to back you with financial solutions that evolve with your needs, empowering you to chase the extraordinary. Because when you have <span className="font-semibold">Hausla</span>, anything is possible.
                     </p>
                   </div>
