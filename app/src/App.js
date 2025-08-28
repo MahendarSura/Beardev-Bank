@@ -219,7 +219,7 @@ const App = () => {
           <div className="bg-white border-t border-gray-200">
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
               {/* Increased font size for sub-nav links to sm */}
-              <div className="ml-14 flex items-center space-x-3 text-gray-600 font-medium text-sm min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap">
+              <div className="ml-12 flex items-center space-x-3 text-gray-600 font-medium text-sm min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap">
                 {["Accounts & Deposits", "Cards & Prepaid Services", "Loans", "Investment & Insurance", "Payments & Taxes", "Offers", "Service Request"].map((item) => (
                   <a key={item} href="#" className="hover:text-red-600 flex-shrink-0 px-1">{item}</a>
                 ))}
