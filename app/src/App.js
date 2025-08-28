@@ -199,7 +199,7 @@ const App = () => {
                 <span className="text-lg font-bold text-white whitespace-nowrap">Beardev Bank</span>
               </div>
               {/* Increased font size for main nav links to base */}
-              <nav className="ml-14 flex items-center space-x-2 font-medium min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap text-base">
+              <nav className="ml-16 flex items-center space-x-2 font-medium min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap text-base">
                 {["Personal", "Business", "Corporate", "Private Banking", "Privy League", "Solitaire", "NRI Services", "Investors"].map((link) => (
                   <a key={link} href="#" className="text-white hover:underline flex-shrink-0 px-1">{link}</a>
                 ))}
