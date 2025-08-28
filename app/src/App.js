@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   Search, User, LifeBuoy, MapPin, ArrowRightCircle, ChevronRight, MessageCircle,
-  BarChart, CreditCard, DollarSign, Bot, Loader
-} from 'lucide-react';
-import {
+  BarChart, CreditCard, DollarSign, Bot, Loader,
   HelpCircle, Phone, Map, AlertTriangle, FileText
 } from 'lucide-react';
 
@@ -18,8 +16,7 @@ import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
 import oneApp from './images/oneapp.png';
 
-// ** DO NOT import images from public folder **
-// Instead, reference them by their URL paths
+// ** Do not import public folder images — reference via URL paths instead
 
 const App = () => {
   const [messages, setMessages] = useState([
@@ -29,35 +26,35 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
+  // Scroll chat to bottom when messages update
   useEffect(() => {
-    scrollToBottom();
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
   const handleSend = async () => {
     if (input.trim() === '') return;
 
-    const userMessage = { text: input, sender: 'user' };
-    setMessages(prevMessages => [...prevMessages, userMessage]);
+    const userMessage = { text: input.trim(), sender: 'user' };
+    setMessages(prev => [...prev, userMessage]);
     setInput('');
     setIsLoading(true);
 
+    // Simulate async bot response
     setTimeout(() => {
       const botResponse = { text: `You said: "${userMessage.text}"`, sender: 'bot' };
-      setMessages(prevMessages => [...prevMessages, botResponse]);
+      setMessages(prev => [...prev, botResponse]);
       setIsLoading(false);
     }, 1000);
   };
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
+      e.preventDefault();
       handleSend();
     }
   };
 
+  // Cards info imported from local images
   const allCards = [
     {
       title: "Everyday Savings Account",
@@ -94,6 +91,7 @@ const App = () => {
   const firstRowCards = allCards.slice(0, 3);
   const secondRowCards = allCards.slice(3, 6);
 
+  // Last three images, imported
   const lastThreeImages = [
     {
       title: "Pay in a Flash!",
@@ -115,29 +113,29 @@ const App = () => {
     }
   ];
 
-  // Updated heroImages to use public folder URLs
+  // heroImages reference public folder images via URL path — this is correct
   const heroImages = [
-  {
-    title: "At Beardev Bank",
-    description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
-    image: "/images/BeardevBank.png"
-  },
-  {
-    title: "Wide Banner Image",
-    description: "Own your dream home with Beardev Bank's best home loan rates.",
-    image: "/images/WideImage.png"
-  },
-  {
-    title: "Own Your Dream",
-    description: "Make your dream home a reality with Beardev Bank.",
-    image: "/images/OwnYourDream.png"
-  },
-  {
-    title: "Knowledge Hub",
-    description: "Curated stories and financial insights for you.",
-    image: "/images/KnowledgeHub.png"
-  }
-];
+    {
+      title: "At Beardev Bank",
+      description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
+      image: "/images/BeardevBank.png"
+    },
+    {
+      title: "Wide Banner Image",
+      description: "Own your dream home with Beardev Bank's best home loan rates.",
+      image: "/images/WideImage.png"
+    },
+    {
+      title: "Own Your Dream",
+      description: "Make your dream home a reality with Beardev Bank.",
+      image: "/images/OwnYourDream.png"
+    },
+    {
+      title: "Knowledge Hub",
+      description: "Curated stories and financial insights for you.",
+      image: "/images/KnowledgeHub.png"
+    }
+  ];
 
   const helpOptions = [
     {
