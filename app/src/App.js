@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { HelpCircle, Phone, Map, AlertTriangle, FileText } from 'lucide-react';
 
-// Import images from src/images folder (matching your actual filenames)
-import card1 from './images/EverydaySavings.png';
-import card2 from './images/CreditCards.png';
-import card3 from './images/TrinityAccount.png';
-import card4 from './images/currentaccount.png';
-import card5 from './images/BusinessLending.png';
-import card6 from './images/WorkingCapital.png';
+// Images imported individually with descriptive names
+import everydaySavingsImage from './images/EverydaySavings.png';
+import creditCardsImage from './images/CreditCards.png';
+import trinityAccountImage from './images/TrinityAccount.png';
+import currentAccountImage from './images/currentaccount.png';
+import businessLendingImage from './images/BusinessLending.png';
+import workingCapitalImage from './images/WorkingCapital.png';
 
-import last1 from './images/PayinFlash.png';
-import last2 from './images/oneapp.png';
-import last3 from './images/3-IN-1-account.png';
+import payInFlashImage from './images/PayinFlash.png';
+import oneAppImage from './images/oneapp.png';
+import threeInOneAccountImage from './images/3-IN-1-account.png';
 
 const App = () => {
   const [messages, setMessages] = useState([
@@ -54,32 +54,32 @@ const App = () => {
     {
       title: "Everyday Savings Account",
       desc: "Enjoy offers on BookMyShow, EazyDiner and more.",
-      img: card1
+      img: everydaySavingsImage
     },
     {
       title: "Credit Cards",
       desc: "Rewards | Cashback | EMI Deals",
-      img: card2
+      img: creditCardsImage
     },
     {
       title: "3-in-1 Trinity Account",
       desc: "Save, Trade & Invest Smartly",
-      img: card3
+      img: trinityAccountImage
     },
     {
       title: "Current Account",
       desc: "Power your entrepreneurial dreams. Enjoy simplified transactions and grow the smart way.",
-      img: card4
+      img: currentAccountImage
     },
     {
       title: "Business Lending",
       desc: "Not enough funds for your business dreams? Flexible collateral-free loans from ₹3 lakh to ₹1 crore",
-      img: card5
+      img: businessLendingImage
     },
     {
       title: "Working Capital",
       desc: "Your big ambitions need smart capital. Answer business opportunities with confidence, thanks to our working capital solutions",
-      img: card6
+      img: workingCapitalImage
     }
   ];
 
@@ -90,19 +90,19 @@ const App = () => {
     {
       title: "Pay in a Flash",
       description: "Scan, tap, and pay. Make UPI payments on-the-go with the New Beardev Bank App.",
-      image: last1,
+      image: payInFlashImage,
       linkText: "Know more"
     },
     {
       title: "Did you know? One app can do it all!",
       description: "Bank, invest, shop, travel, pay & more with the Beardev Mobile Banking App!",
-      image: last2,
+      image: oneAppImage,
       linkText: "Know More"
     },
     {
       title: "3-IN-1 ACCOUNT",
       description: "Savings + Demat + Trading. Stocks | Bonds | ETFs | IPO",
-      image: last3,
+      image: threeInOneAccountImage,
       linkText: "Upgrade Now"
     }
   ];
