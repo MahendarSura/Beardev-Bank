@@ -1,21 +1,26 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   Search, User, LifeBuoy, MapPin, ArrowRightCircle, ChevronRight, MessageCircle,
-  BarChart, CreditCard, DollarSign, Bot, Loader,
+  BarChart, CreditCard, DollarSign, Bot, Loader
+} from 'lucide-react';
+import {
   HelpCircle, Phone, Map, AlertTriangle, FileText
 } from 'lucide-react';
 
+// ✅ Correct image imports (case-sensitive)
 import threeInOneAccount from './images/3-IN-1-account.png';
 import businessLending from './images/BusinessLending.png';
 import creditCards from './images/CreditCards.png';
 import everydaySavings from './images/EverydaySavings.png';
 import payinFlash from './images/PayinFlash.png';
+import knowledgeHub from './images/KnowledgeHub.png';
 import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
+import ownyourDream from './images/OwnYourDream.png';
 import oneApp from './images/oneapp.png';
-// Import your new image here
-import familyHomeLoanImage from './images/family-home-loan.png'; // Assuming you save the generated image as family-home-loan.png in your images folder
+import beardevBank from './images/BeardevBank.png';
+import wideImage from './images/WideImage.png';
 
 const App = () => {
   const [messages, setMessages] = useState([
@@ -25,28 +30,31 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  useEffect(() => {
+  const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
   }, [messages]);
 
   const handleSend = async () => {
     if (input.trim() === '') return;
 
-    const userMessage = { text: input.trim(), sender: 'user' };
-    setMessages(prev => [...prev, userMessage]);
+    const userMessage = { text: input, sender: 'user' };
+    setMessages(prevMessages => [...prevMessages, userMessage]);
     setInput('');
     setIsLoading(true);
 
     setTimeout(() => {
       const botResponse = { text: `You said: "${userMessage.text}"`, sender: 'bot' };
-      setMessages(prev => [...prev, botResponse]);
+      setMessages(prevMessages => [...prevMessages, botResponse]);
       setIsLoading(false);
     }, 1000);
   };
 
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
-      e.preventDefault();
       handleSend();
     }
   };
@@ -108,28 +116,29 @@ const App = () => {
     }
   ];
 
+  // ✅ Fixed heroImages array with correct imports
   const heroImages = [
-    {
-      title: "At Beardev Bank",
-      description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
-      image: "/images/BeardevBank.png"
-    },
-    {
-      title: "Wide Banner Image",
-      description: "Own your dream home with Beardev Bank's best home loan rates.",
-      image: familyHomeLoanImage // Use the imported image here
-    },
-    {
-      title: "Own Your Dream",
-      description: "Make your dream home a reality with Beardev Bank.",
-      image: "/images/OwnYourDream.png"
-    },
-    {
-      title: "Knowledge Hub",
-      description: "Curated stories and financial insights for you.",
-      image: "/images/KnowledgeHub.png"
-    }
-  ];
+  {
+    title: "At Beardev Bank",
+    description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
+    image: beardevBank
+  },
+  {
+    title: "Wide Banner Image",
+    description: "Own your dream home with Beardev Bank's best home loan rates.",
+    image: wideImage
+  },
+  {
+    title: "Own Your Dream",
+    description: "Make your dream home a reality with Beardev Bank.",
+    image: ownyourDream
+  },
+  {
+    title: "Knowledge Hub",
+    description: "Curated stories and financial insights for you.",
+    image: knowledgeHub
+  }
+];
 
   const helpOptions = [
     {
