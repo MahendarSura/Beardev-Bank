@@ -183,58 +183,54 @@ const App = () => {
     ]
   };
   return (
-    <header className="bg-red-600 shadow-sm sticky top-0 z-50 text-[12px] -mx-4 sm:-mx-6 lg:-mx-16 xl:-mx-20">
-     <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
-      <div className="flex items-center space-x-3 min-w-0">
-       <div className="flex items-center flex-shrink-0">
-        <span className="bg-white text-red-600 rounded-md p-1 mr-2 font-bold text-xl">B</span>
-        <span className="text-lg font-bold text-white whitespace-nowrap">Beardev Bank</span>
-      </div>
-
-      {/* Top nav shifted right a bit */}
-      <div className="ml-10">
-        <nav className="flex items-center space-x-2 font-medium min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap text-base">
-          {["Personal", "Business", "Corporate", "Private Banking", "Privy League", "Solitaire", "NRI Services", "Investors"].map((link) => (
-            <a key={link} href="#" className="text-white hover:underline flex-shrink-0 px-1">{link}</a>
-          ))}
-        </nav>
-      </div>
-    </div>
-
-    <div className="flex items-center space-x-2 flex-shrink-0">
-      <button className="text-white hover:text-gray-100 p-2 rounded-full transition-colors hidden sm:block">
-        <Search size={16} />
-      </button>
-      <button className="bg-white hover:bg-gray-100 text-red-600 font-semibold px-3 py-1 rounded-full flex items-center space-x-1 text-base shadow-sm transition-colors whitespace-nowrap">
-        <User size={14} />
-        <span>Login</span>
-      </button>
-    </div>
-  </div>
-
-  <div className="bg-white border-t border-gray-200">
-    <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
-      
-      {/* Bottom nav shifted right same as top */}
-      <div className="ml-10">
-        <div className="flex items-center space-x-3 text-gray-600 font-medium text-sm min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap">
-          {["Accounts & Deposits", "Cards & Prepaid Services", "Loans", "Investment & Insurance", "Payments & Taxes", "Offers", "Service Request"].map((item) => (
-            <a key={item} href="#" className="hover:text-red-600 flex-shrink-0 px-1">{item}</a>
-          ))}
-        </div>
-      </div>
-
-      <div className="hidden md:flex items-center space-x-4 text-red-600 font-semibold text-base whitespace-nowrap">
-        <a href="#" className="flex items-center space-x-1 hover:underline">
-          <LifeBuoy size={14} /><span>Help Center</span>
-        </a>
-        <a href="#" className="flex items-center space-x-1 hover:underline">
-          <MapPin size={14} /><span>Locate us</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
+    <div className="bg-gray-100 font-sans min-h-screen">
+      <div className="px-4 sm:px-6 lg:px-16 xl:px-20">
+        <header className="bg-red-600 shadow-sm sticky top-0 z-50 text-[12px] -mx-4 sm:-mx-6 lg:-mx-16 xl:-mx-20">
+          <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+            {/* Increased font size for B and Beardev Bank text to xl and lg */}
+            <div className="flex items-center space-x-3 min-w-0">
+              <div className="flex items-center flex-shrink-0">
+                <span className="bg-white text-red-600 rounded-md p-1 mr-2 font-bold text-xl">B</span>
+                <span className="text-lg font-bold text-white whitespace-nowrap">Beardev Bank</span>
+              </div>
+              {/* Increased font size for main nav links to base */}
+              <nav className="flex items-center space-x-2 font-medium min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap text-base">
+                {["Personal", "Business", "Corporate", "Private Banking", "Privy League", "Solitaire", "NRI Services", "Investors"].map((link) => (
+                  <a key={link} href="#" className="text-white hover:underline flex-shrink-0 px-1">{link}</a>
+                ))}
+              </nav>
+            </div>
+            {/* Increased font size for Login text to base */}
+            <div className="flex items-center space-x-2 flex-shrink-0">
+              <button className="text-white hover:text-gray-100 p-2 rounded-full transition-colors hidden sm:block">
+                <Search size={16} />
+              </button>
+              <button className="bg-white hover:bg-gray-100 text-red-600 font-semibold px-3 py-1 rounded-full flex items-center space-x-1 text-base shadow-sm transition-colors whitespace-nowrap">
+                <User size={14} />
+                <span>Login</span>
+              </button>
+            </div>
+          </div>
+          <div className="bg-white border-t border-gray-200">
+            <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+              {/* Increased font size for sub-nav links to sm */}
+              <div className="flex items-center space-x-3 text-gray-600 font-medium text-sm min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap">
+                {["Accounts & Deposits", "Cards & Prepaid Services", "Loans", "Investment & Insurance", "Payments & Taxes", "Offers", "Service Request"].map((item) => (
+                  <a key={item} href="#" className="hover:text-red-600 flex-shrink-0 px-1">{item}</a>
+                ))}
+              </div>
+              {/* Increased font size for Help and Locate links to base */}
+              <div className="hidden md:flex items-center space-x-4 text-red-600 font-semibold text-base whitespace-nowrap">
+                <a href="#" className="flex items-center space-x-1 hover:underline">
+                  <LifeBuoy size={14} /><span>Help Center</span>
+                </a>
+                <a href="#" className="flex items-center space-x-1 hover:underline">
+                  <MapPin size={14} /><span>Locate us</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
 
         <main className="mt-10 max-w-[1600px] mx-auto">
           <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg border border-gray-200 lg:h-[600px] flex flex-col-reverse lg:flex-row items-center">
