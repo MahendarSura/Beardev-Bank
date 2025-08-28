@@ -290,7 +290,7 @@ const App = () => {
             <div className="flex flex-col gap-6">
               <div className="flex flex-wrap md:flex-nowrap gap-4">
                 <div className="w-full md:w-2/3 bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
-                  <div className="h-40 sm:h-48 md:h-52 lg:h-60">
+                  <div className="h-64 sm:h-72 md:h-80 lg:h-96">
                     <img
                       src={wideImage}
                       alt="Wide Image"
