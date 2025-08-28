@@ -118,27 +118,27 @@ const App = () => {
 
   // ✅ Fixed heroImages array with correct imports
   const heroImages = [
-    {
-      title: "At Beardev Bank",
-      description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
-      image: atBeardevBank
-    },
-    {
-      title: "Wide Banner Image",
-      description: "Own your dream home with Beardev Bank's best home loan rates.",
-      image: wideimage
-    },
-    {
-      title: "Own Your Dream",
-      description: "Make your dream home a reality with Beardev Bank.",
-      image: ownyourdream
-    },
-    {
-      title: "Knowledge Hub",
-      description: "Curated stories and financial insights for you.",
-      image: knowledgeHub
-    }
-  ];
+  {
+    title: "At Beardev Bank",
+    description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
+    image: atBeardevBank
+  },
+  {
+    title: "Wide Banner Image",
+    description: "Own your dream home with Beardev Bank's best home loan rates.",
+    image: wideimage
+  },
+  {
+    title: "Own Your Dream",
+    description: "Make your dream home a reality with Beardev Bank.",
+    image: ownyourdream
+  },
+  {
+    title: "Knowledge Hub",
+    description: "Curated stories and financial insights for you.",
+    image: knowledgeHub
+  }
+];
 
   const helpOptions = [
     {
