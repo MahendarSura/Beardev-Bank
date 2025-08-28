@@ -163,7 +163,7 @@ const App = () => {
       title: "Lodge a complaint",
       description: "Raise a grievance for any service deficiency",
     },
-  ];
+  ]; 
 
   const footerData = {
     "About us": [
