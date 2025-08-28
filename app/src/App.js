@@ -9,7 +9,7 @@ import card4 from './images/currentaccount.png';
 import card5 from './images/BusinessLending.png';
 import card6 from './images/WorkingCapital.png';
 
-import last1 from './images/PayinFlash!.png';
+import last1 from './images/PayinFlash.png';
 import last2 from './images/oneapp.png';
 import last3 from './images/3-IN-1-account.png';
 
@@ -88,7 +88,7 @@ const App = () => {
 
   const lastThreeImages = [
     {
-      title: "Pay in a Flash!",
+      title: "Pay in a Flash",
       description: "Scan, tap, and pay. Make UPI payments on-the-go with the New Beardev Bank App.",
       image: last1,
       linkText: "Know more"
