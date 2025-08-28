@@ -323,7 +323,7 @@ const App = () => {
                       alt="Stories in focus"
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-8 text-white">
+                    <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
                       <h3 className="text-base font-semibold mb-2">Stories in focus</h3>
                       <p className="text-sm font-medium mb-4 leading-relaxed">
                         Browse through our specially curated collection of stories, handpicked for your reading pleasure
