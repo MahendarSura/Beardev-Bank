@@ -12,7 +12,7 @@ import storiesInFocus from './images/Storiesinfocus.png';
 import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
-import dreamHome from './images/dreamhome.png';
+import Ownyourdream from './images/Ownyourdream.png';
 import oneApp from './images/oneapp.png';
 import AtBeardevBank from './images/AtBeardevBank.png';
 
