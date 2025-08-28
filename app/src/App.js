@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { HelpCircle, Phone, Map, AlertTriangle, FileText } from 'lucide-react';
 
-// Import images from src/images folder
-import card1 from './images/card1.jpg';
-import card2 from './images/card2.jpg';
-import card3 from './images/card3.jpg';
-import card4 from './images/card4.jpg';
-import card5 from './images/card5.jpg';
-import card6 from './images/card6.jpg';
+// Import images from src/images folder (matching your actual filenames)
+import card1 from './images/EverydaySavings.png';
+import card2 from './images/CreditCards.png';
+import card3 from './images/TrinityAccount.png';
+import card4 from './images/currentaccount.png';
+import card5 from './images/BusinessLending.png';
+import card6 from './images/WorkingCapital.png';
 
-import last1 from './images/last1.jpg';
-import last2 from './images/last2.jpg';
-import last3 from './images/last3.jpg';
+import last1 from './images/PayinFlash!.png';
+import last2 from './images/oneapp.png';
+import last3 from './images/3-IN-1-account.png';
 
 const App = () => {
   const [messages, setMessages] = useState([
