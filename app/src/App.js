@@ -1,15 +1,8 @@
-import React from "react";
-import everydaySavingsImage from './images/EverydaySavings.png';
-import creditCardsImage from './images/CreditCards.png';
-import trinityAccountImage from './images/TrinityAccount.png';
-import currentAccountImage from './images/currentaccount.png';
-import businessLendingImage from './images/BusinessLending.png';
-import workingCapitalImage from './images/WorkingCapital.png';
-import payInFlashImage from './images/PayinFlash.png';
-import oneAppImage from './images/oneapp.png';
-import threeInOneAccountImage from './images/3-IN-1-account.png';
+import React, { useState, useEffect, useRef } from 'react';
+import { Search, User, LifeBuoy, MapPin, ArrowRightCircle, ChevronRight, MessageCircle, BarChart, CreditCard, DollarSign, Bot, Loader } from 'lucide-react';
+import { HelpCircle, Phone, Map, AlertTriangle, FileText } from 'lucide-react';
 
-function App() {
+const App = () => {
   const [messages, setMessages] = useState([
     { text: "Hello! How can I help you today?", sender: 'bot' }
   ]);
@@ -50,32 +43,32 @@ function App() {
     {
       title: "Everyday Savings Account",
       desc: "Enjoy offers on BookMyShow, EazyDiner and more.",
-      img: everydaySavingsImage
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_1.jpg"
     },
     {
       title: "Credit Cards",
       desc: "Rewards | Cashback | EMI Deals",
-      img: creditCardsImage
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_2.jpg"
     },
     {
       title: "3-in-1 Trinity Account",
       desc: "Save, Trade & Invest Smartly",
-      img: trinityAccountImage
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_3.jpg"
     },
     {
       title: "Current Account",
       desc: "Power your entrepreneurial dreams. Enjoy simplified transactions and grow the smart way.",
-      img: currentAccountImage
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_1.jpg"
     },
     {
       title: "Business Lending",
       desc: "Not enough funds for your business dreams? Flexible collateral-free loans from ₹3 lakh to ₹1 crore",
-      img: businessLendingImage
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_2.jpg"
     },
     {
       title: "Working Capital",
       desc: "Your big ambitions need smart capital. Answer business opportunities with confidence, thanks to our working capital solutions",
-      img: workingCapitalImage
+      img: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132438_3.jpg"
     }
   ];
 
@@ -84,21 +77,21 @@ function App() {
 
   const lastThreeImages = [
     {
-      title: "Pay in a Flash",
+      title: "Pay in a Flash!",
       description: "Scan, tap, and pay. Make UPI payments on-the-go with the New Beardev Bank App.",
-      image: payInFlashImage,
+      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_1.jpg",
       linkText: "Know more"
     },
     {
       title: "Did you know? One app can do it all!",
       description: "Bank, invest, shop, travel, pay & more with the Beardev Mobile Banking App!",
-      image: oneAppImage,
+      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_2.jpg",
       linkText: "Know More"
     },
     {
       title: "3-IN-1 ACCOUNT",
       description: "Savings + Demat + Trading. Stocks | Bonds | ETFs | IPO",
-      image: threeInOneAccountImage,
+      image: "https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132546_3.jpg",
       linkText: "Upgrade Now"
     }
   ];
