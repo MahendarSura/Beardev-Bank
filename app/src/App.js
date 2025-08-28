@@ -340,7 +340,7 @@ const App = () => {
                     <ul className="space-y-3">
                       <li className="flex items-center space-x-2 pb-3 border-b border-gray-200">
                         <img
-                          src="https://raw.githubusercontent.com/mdr-001/images/main/sabatical.jpg"
+                          src={sabbatical}
                           alt="Sabbatical"
                           className="w-16 h-16 object-cover rounded-md"
                         />
@@ -351,7 +351,7 @@ const App = () => {
                       </li>
                       <li className="flex items-center space-x-2 pb-3 border-b border-gray-200">
                         <img
-                          src="https://raw.githubusercontent.com/mdr-001/images/main/benefits.jpg"
+                          src={personalLoan}
                           alt="Benefits of personal loan"
                           className="w-16 h-16 object-cover rounded-md"
                         />
@@ -362,7 +362,7 @@ const App = () => {
                       </li>
                       <li className="flex items-center space-x-2 pb-3 border-b border-gray-200">
                         <img
-                          src="https://raw.githubusercontent.com/mdr-001/images/main/calculator.jpg"
+                          src={loanCalculator}
                           alt="Loan calculator"
                           className="w-16 h-16 object-cover rounded-md"
                         />
@@ -373,7 +373,7 @@ const App = () => {
                       </li>
                       <li className="flex items-center space-x-2 pb-3 border-b border-gray-200">
                         <img
-                          src="https://raw.githubusercontent.com/mdr-001/images/main/self-employed.jpg"
+                          src={selfEmployed}
                           alt="Self-employed"
                           className="w-16 h-16 object-cover rounded-md"
                         />
@@ -384,7 +384,7 @@ const App = () => {
                       </li>
                       <li className="flex items-center space-x-2 pb-3 border-b-0">
                         <img
-                          src="https://raw.githubusercontent.com/mdr-001/images/main/financial-setback.jpg"
+                          src={financialSetback}
                           alt="Financial setback"
                           className="w-16 h-16 object-cover rounded-md"
                         />
