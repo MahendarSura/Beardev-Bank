@@ -117,27 +117,27 @@ const App = () => {
 
   // Updated heroImages to use public folder URLs
   const heroImages = [
-    {
-      title: "At Beardev Bank",
-      description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
-      image: "/images/BeardevBank.png"
-    },
-    {
-      title: "Wide Banner Image",
-      description: "Own your dream home with Beardev Bank's best home loan rates.",
-      image: "/images/WideImage.png"
-    },
-    {
-      title: "Own Your Dream",
-      description: "Make your dream home a reality with Beardev Bank.",
-      image: "/images/OwnYourDream.png"
-    },
-    {
-      title: "Knowledge Hub",
-      description: "Curated stories and financial insights for you.",
-      image: "/images/KnowledgeHub.png"
-    }
-  ];
+  {
+    title: "At Beardev Bank",
+    description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
+    image: "/images/BeardevBank.png"
+  },
+  {
+    title: "Wide Banner Image",
+    description: "Own your dream home with Beardev Bank's best home loan rates.",
+    image: "/images/WideImage.png"
+  },
+  {
+    title: "Own Your Dream",
+    description: "Make your dream home a reality with Beardev Bank.",
+    image: "/images/OwnYourDream.png"
+  },
+  {
+    title: "Knowledge Hub",
+    description: "Curated stories and financial insights for you.",
+    image: "/images/KnowledgeHub.png"
+  }
+];
 
   const helpOptions = [
     {
