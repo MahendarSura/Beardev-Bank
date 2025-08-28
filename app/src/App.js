@@ -14,7 +14,8 @@ import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
 import Ownyourdream from './images/Ownyourdream.png';
 import oneApp from './images/oneapp.png';
-import AtBeardevBank from './images/AtBeardevBank.png';
+import atbeardevbank from './images/AtBeardevBank.png';
+import wideimage from './images/wideimage.png';
 
 const App = () => {
   const [messages, setMessages] = useState([
