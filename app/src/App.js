@@ -244,7 +244,7 @@ const App = () => {
                 <button className="text-red-600 hover:text-red-700 font-semibold py-3 px-8 rounded-full border-2 border-red-600 transition-colors">Know More</button>
               </div>
             </div>
-            <div className="lg:w-1/2 h-64 sm:h-96 lg:h-full w-full">
+            <div className="lg:w-1/2 h-64 sm:h-80 lg:h-[400px] w-full">
               <img src={dreamhomeBanner} alt="Own Your Dream" className="w-full h-full object-cover" />
             </div>
           </div>
