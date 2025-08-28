@@ -245,7 +245,7 @@ const App = () => {
               </div>
             </div>
             <div className="lg:w-1/2 h-64 sm:h-96 lg:h-full w-full">
-              <img src="https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132414.jpg" alt="Family" className="w-full h-full object-cover" />
+              <img src={dreamhomeBanner} alt="Own Your Dream" className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -319,7 +319,7 @@ const App = () => {
                 <div className="bg-white rounded-3xl shadow-lg border border-gray-200 flex flex-col md:flex-row p-4 gap-4">
                   <div className="relative w-full md:w-2/3 rounded-2xl overflow-hidden">
                     <img
-                      src="https://raw.githubusercontent.com/mdr-001/images/main/Screenshot%202025-08-27%20132522.jpg"
+                      src={knowledgeHub}
                       alt="Stories in focus"
                       className="w-full h-full object-cover"
                     />
