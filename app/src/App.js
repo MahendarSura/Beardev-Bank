@@ -7,7 +7,7 @@ import {
   HelpCircle, Phone, Map, AlertTriangle, FileText
 } from 'lucide-react';
 
-// ✅ Import only images that remain in src/images
+// Import images inside src/images folder
 import threeInOneAccount from './images/3-IN-1-account.png';
 import businessLending from './images/BusinessLending.png';
 import creditCards from './images/CreditCards.png';
@@ -18,14 +18,45 @@ import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
 import oneApp from './images/oneapp.png';
 
-// Removed these 4 imports since images moved to public folder:
-// import knowledgeHub from './images/KnowledgeHub.png';
-// import ownyourDream from './images/OwnYourDream.png';
-// import beardevBank from './images/BeardevBank.png';
-// import wideImage from './images/WideImage.png';
+// ** DO NOT import images from public folder **
+// Instead, reference them by their URL paths
 
 const App = () => {
-  // ... all your existing hooks and functions ...
+  const [messages, setMessages] = useState([
+    { text: "Hello! How can I help you today?", sender: 'bot' }
+  ]);
+  const [input, setInput] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const messagesEndRef = useRef(null);
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
+  const handleSend = async () => {
+    if (input.trim() === '') return;
+
+    const userMessage = { text: input, sender: 'user' };
+    setMessages(prevMessages => [...prevMessages, userMessage]);
+    setInput('');
+    setIsLoading(true);
+
+    setTimeout(() => {
+      const botResponse = { text: `You said: "${userMessage.text}"`, sender: 'bot' };
+      setMessages(prevMessages => [...prevMessages, botResponse]);
+      setIsLoading(false);
+    }, 1000);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSend();
+    }
+  };
 
   const allCards = [
     {
@@ -84,27 +115,27 @@ const App = () => {
     }
   ];
 
-  // Updated heroImages to use public folder URLs for these 4 images:
+  // Updated heroImages to use public folder URLs
   const heroImages = [
     {
       title: "At Beardev Bank",
       description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
-      image: "/images/BeardevBank.png"   // public folder reference
+      image: "/images/BeardevBank.png"
     },
     {
       title: "Wide Banner Image",
       description: "Own your dream home with Beardev Bank's best home loan rates.",
-      image: "/images/WideImage.png"      // public folder reference
+      image: "/images/WideImage.png"
     },
     {
       title: "Own Your Dream",
       description: "Make your dream home a reality with Beardev Bank.",
-      image: "/images/OwnYourDream.png"   // public folder reference
+      image: "/images/OwnYourDream.png"
     },
     {
       title: "Knowledge Hub",
       description: "Curated stories and financial insights for you.",
-      image: "/images/KnowledgeHub.png"   // public folder reference
+      image: "/images/KnowledgeHub.png"
     }
   ];
 
