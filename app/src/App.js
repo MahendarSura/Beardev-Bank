@@ -5,7 +5,6 @@ import {
   HelpCircle, Phone, Map, AlertTriangle, FileText
 } from 'lucide-react';
 
-// Import images inside src/images folder
 import threeInOneAccount from './images/3-IN-1-account.png';
 import businessLending from './images/BusinessLending.png';
 import creditCards from './images/CreditCards.png';
@@ -16,8 +15,6 @@ import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
 import oneApp from './images/oneapp.png';
 
-// ** Do not import public folder images — reference via URL paths instead
-
 const App = () => {
   const [messages, setMessages] = useState([
     { text: "Hello! How can I help you today?", sender: 'bot' }
@@ -26,7 +23,6 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  // Scroll chat to bottom when messages update
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
@@ -39,7 +35,6 @@ const App = () => {
     setInput('');
     setIsLoading(true);
 
-    // Simulate async bot response
     setTimeout(() => {
       const botResponse = { text: `You said: "${userMessage.text}"`, sender: 'bot' };
       setMessages(prev => [...prev, botResponse]);
@@ -54,7 +49,6 @@ const App = () => {
     }
   };
 
-  // Cards info imported from local images
   const allCards = [
     {
       title: "Everyday Savings Account",
@@ -91,7 +85,6 @@ const App = () => {
   const firstRowCards = allCards.slice(0, 3);
   const secondRowCards = allCards.slice(3, 6);
 
-  // Last three images, imported
   const lastThreeImages = [
     {
       title: "Pay in a Flash!",
@@ -113,7 +106,6 @@ const App = () => {
     }
   ];
 
-  // heroImages reference public folder images via URL path — this is correct
   const heroImages = [
     {
       title: "At Beardev Bank",
@@ -163,7 +155,7 @@ const App = () => {
       title: "Lodge a complaint",
       description: "Raise a grievance for any service deficiency",
     },
-  ]; 
+  ];
 
   const footerData = {
     "About us": [
