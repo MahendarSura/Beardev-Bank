@@ -17,7 +17,7 @@ import knowledgeHub from './images/KnowledgeHub.png';
 import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
-import ownyourDream from './images/OwnYourDream.png';
+import dreamhomeBanner from './images/dreamHomeBanner.png.png';
 import oneApp from './images/oneapp.png';
 import beardevBank from './images/BeardevBank.png';
 import wideImage from './images/WideImage.png';
