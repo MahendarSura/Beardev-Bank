@@ -184,9 +184,9 @@ const App = () => {
   };
   return (
     <header className="bg-red-600 shadow-sm sticky top-0 z-50 text-[12px] -mx-4 sm:-mx-6 lg:-mx-16 xl:-mx-20">
-  <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
-    <div className="flex items-center space-x-3 min-w-0">
-      <div className="flex items-center flex-shrink-0">
+     <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+      <div className="flex items-center space-x-3 min-w-0">
+       <div className="flex items-center flex-shrink-0">
         <span className="bg-white text-red-600 rounded-md p-1 mr-2 font-bold text-xl">B</span>
         <span className="text-lg font-bold text-white whitespace-nowrap">Beardev Bank</span>
       </div>
