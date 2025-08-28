@@ -292,7 +292,7 @@ const App = () => {
                 <div className="w-full md:w-2/3 bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
                   <div className="h-40 sm:h-48 md:h-52 lg:h-60">
                     <img
-                      src="https://raw.githubusercontent.com/mdr-001/images/main/wide-placeholder.jpg"
+                      src={wideImage}
                       alt="Wide Image"
                       className="w-full h-full object-cover"
                     />
@@ -301,7 +301,7 @@ const App = () => {
                 <div className="w-full md:w-1/3 bg-white rounded-xl shadow-md overflow-hidden border border-gray-200 flex flex-col">
                   <div className="h-40 sm:h-48 md:h-52 lg:h-60">
                     <img
-                      src="https://raw.githubusercontent.com/mdr-001/images/main/small-placeholder.jpg"
+                      src={smallImage}
                       alt="Small Image"
                       className="w-full h-full object-cover"
                     />
