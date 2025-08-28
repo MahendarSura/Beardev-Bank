@@ -7,7 +7,7 @@ import {
   HelpCircle, Phone, Map, AlertTriangle, FileText
 } from 'lucide-react';
 
-// Import images from the local src/images folder
+// ✅ Correct image imports (case-sensitive)
 import threeInOneAccount from './images/3-IN-1-account.png';
 import businessLending from './images/BusinessLending.png';
 import creditCards from './images/CreditCards.png';
@@ -17,10 +17,10 @@ import knowledgeHub from './images/KnowledgeHub.png';
 import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
-import ownyourDream from './images/Ownyourdream.png';
+import ownyourdream from './images/Ownyourdream.png';
 import oneApp from './images/oneapp.png';
-import atBeardevbank from './images/AtBeardevBank.png';
-import wideImage from './images/wideimage.png';
+import atBeardevBank from './images/AtBeardevBank.png';
+import wideimage from './images/wideimage.png';
 
 const App = () => {
   const [messages, setMessages] = useState([
@@ -116,21 +116,22 @@ const App = () => {
     }
   ];
 
+  // ✅ Fixed heroImages array with correct imports
   const heroImages = [
     {
       title: "At Beardev Bank",
       description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
-      image: atBeardevbank
+      image: atBeardevBank
     },
     {
       title: "Wide Banner Image",
       description: "Own your dream home with Beardev Bank's best home loan rates.",
-      image: wideImage
+      image: wideimage
     },
     {
       title: "Own Your Dream",
       description: "Make your dream home a reality with Beardev Bank.",
-      image: ownyourDream
+      image: ownyourdream
     },
     {
       title: "Knowledge Hub",
@@ -182,7 +183,6 @@ const App = () => {
     ]
   };
 
-  
   return (
     <div className="bg-gray-100 font-sans min-h-screen">
       <div className="px-4 sm:px-6 lg:px-16 xl:px-20">
