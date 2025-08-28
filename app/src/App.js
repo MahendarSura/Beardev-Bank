@@ -7,57 +7,25 @@ import {
   HelpCircle, Phone, Map, AlertTriangle, FileText
 } from 'lucide-react';
 
-// ✅ Correct image imports (case-sensitive)
+// ✅ Import only images that remain in src/images
 import threeInOneAccount from './images/3-IN-1-account.png';
 import businessLending from './images/BusinessLending.png';
 import creditCards from './images/CreditCards.png';
 import everydaySavings from './images/EverydaySavings.png';
 import payinFlash from './images/PayinFlash.png';
-import knowledgeHub from './images/KnowledgeHub.png';
 import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
-import ownyourDream from './images/OwnYourDream.png';
 import oneApp from './images/oneapp.png';
-import beardevBank from './images/BeardevBank.png';
-import wideImage from './images/WideImage.png';
+
+// Removed these 4 imports since images moved to public folder:
+// import knowledgeHub from './images/KnowledgeHub.png';
+// import ownyourDream from './images/OwnYourDream.png';
+// import beardevBank from './images/BeardevBank.png';
+// import wideImage from './images/WideImage.png';
 
 const App = () => {
-  const [messages, setMessages] = useState([
-    { text: "Hello! How can I help you today?", sender: 'bot' }
-  ]);
-  const [input, setInput] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const messagesEndRef = useRef(null);
-
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  useEffect(() => {
-    scrollToBottom();
-  }, [messages]);
-
-  const handleSend = async () => {
-    if (input.trim() === '') return;
-
-    const userMessage = { text: input, sender: 'user' };
-    setMessages(prevMessages => [...prevMessages, userMessage]);
-    setInput('');
-    setIsLoading(true);
-
-    setTimeout(() => {
-      const botResponse = { text: `You said: "${userMessage.text}"`, sender: 'bot' };
-      setMessages(prevMessages => [...prevMessages, botResponse]);
-      setIsLoading(false);
-    }, 1000);
-  };
-
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      handleSend();
-    }
-  };
+  // ... all your existing hooks and functions ...
 
   const allCards = [
     {
@@ -116,29 +84,29 @@ const App = () => {
     }
   ];
 
-  // ✅ Fixed heroImages array with correct imports
+  // Updated heroImages to use public folder URLs for these 4 images:
   const heroImages = [
-  {
-    title: "At Beardev Bank",
-    description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
-    image: beardevBank
-  },
-  {
-    title: "Wide Banner Image",
-    description: "Own your dream home with Beardev Bank's best home loan rates.",
-    image: wideImage
-  },
-  {
-    title: "Own Your Dream",
-    description: "Make your dream home a reality with Beardev Bank.",
-    image: ownyourDream
-  },
-  {
-    title: "Knowledge Hub",
-    description: "Curated stories and financial insights for you.",
-    image: knowledgeHub
-  }
-];
+    {
+      title: "At Beardev Bank",
+      description: "We believe in the fearless trailblazers—the ones who dare to dream bigger.",
+      image: "/images/BeardevBank.png"   // public folder reference
+    },
+    {
+      title: "Wide Banner Image",
+      description: "Own your dream home with Beardev Bank's best home loan rates.",
+      image: "/images/WideImage.png"      // public folder reference
+    },
+    {
+      title: "Own Your Dream",
+      description: "Make your dream home a reality with Beardev Bank.",
+      image: "/images/OwnYourDream.png"   // public folder reference
+    },
+    {
+      title: "Knowledge Hub",
+      description: "Curated stories and financial insights for you.",
+      image: "/images/KnowledgeHub.png"   // public folder reference
+    }
+  ];
 
   const helpOptions = [
     {
