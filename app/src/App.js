@@ -16,7 +16,7 @@ import currentAccount from './images/currentaccount.png';
 import oneApp from './images/oneapp.png';
 
 const App = () => {
-  const [messages, setMessages] = useState([
+  const [messages, setMessages] = useState([ 
     { text: "Hello! How can I help you today?", sender: 'bot' }
   ]);
   const [input, setInput] = useState('');
