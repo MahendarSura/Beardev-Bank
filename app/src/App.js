@@ -14,9 +14,11 @@ import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
 import oneApp from './images/oneapp.png';
+// Import your new image here
+import familyHomeLoanImage from './images/family-home-loan.png'; // Assuming you save the generated image as family-home-loan.png in your images folder
 
 const App = () => {
-  const [messages, setMessages] = useState([ 
+  const [messages, setMessages] = useState([
     { text: "Hello! How can I help you today?", sender: 'bot' }
   ]);
   const [input, setInput] = useState('');
@@ -115,7 +117,7 @@ const App = () => {
     {
       title: "Wide Banner Image",
       description: "Own your dream home with Beardev Bank's best home loan rates.",
-      image: "/images/WideImage.png"
+      image: familyHomeLoanImage // Use the imported image here
     },
     {
       title: "Own Your Dream",
