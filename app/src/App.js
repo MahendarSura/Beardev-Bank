@@ -116,7 +116,6 @@ const App = () => {
     }
   ];
 
-  // ✅ Added this new array for the hero images section
   const heroImages = [
     {
       title: "At Beardev Bank",
