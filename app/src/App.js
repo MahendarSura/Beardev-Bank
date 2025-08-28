@@ -8,14 +8,14 @@ import businessLending from './images/BusinessLending.png';
 import creditCards from './images/CreditCards.png';
 import everydaySavings from './images/EverydaySavings.png';
 import payinFlash from './images/PayinFlash.png';
-import knowledgehub from './images/KnowledgeHub.png';
+import knowledgeHub from './images/KnowledgeHub.png';
 import trinityAccount from './images/TrinityAccount.png';
 import workingCapital from './images/WorkingCapital.png';
 import currentAccount from './images/currentaccount.png';
-import ownyourdream from './images/Ownyourdream.png';
+import ownyourDream from './images/Ownyourdream.png';
 import oneApp from './images/oneapp.png';
-import atbeardevbank from './images/AtBeardevBank.png';
-import wideimage from './images/wideimage.png';
+import atBeardevbank from './images/AtBeardevBank.png';
+import wideImage from './images/wideimage.png';
 
 const App = () => {
   const [messages, setMessages] = useState([
