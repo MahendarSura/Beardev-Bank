@@ -199,7 +199,7 @@ const App = () => {
                 <span className="text-lg font-bold text-white whitespace-nowrap">Beardev Bank</span>
               </div>
               {/* Increased font size for main nav links to base */}
-              <nav className="ml-16 flex items-center space-x-2 font-medium min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap text-base">
+              <nav className="ml-18 flex items-center space-x-2 font-medium min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap text-base">
                 {["Personal", "Business", "Corporate", "Private Banking", "Privy League", "Solitaire", "NRI Services", "Investors"].map((link) => (
                   <a key={link} href="#" className="text-white hover:underline flex-shrink-0 px-1">{link}</a>
                 ))}
@@ -219,7 +219,7 @@ const App = () => {
           <div className="bg-white border-t border-gray-200">
             <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
               {/* Increased font size for sub-nav links to sm */}
-              <div className="ml-12 flex items-center space-x-3 text-gray-600 font-medium text-sm min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap">
+              <div className="ml-18 flex items-center space-x-3 text-gray-600 font-medium text-sm min-w-0 overflow-x-auto no-scrollbar whitespace-nowrap">
                 {["Accounts & Deposits", "Cards & Prepaid Services", "Loans", "Investment & Insurance", "Payments & Taxes", "Offers", "Service Request"].map((item) => (
                   <a key={item} href="#" className="hover:text-red-600 flex-shrink-0 px-1">{item}</a>
                 ))}
