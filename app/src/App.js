@@ -197,7 +197,7 @@ const App = () => {
             <span className="bg-white text-red-600 rounded-md p-1 mr-2 font-bold text-xl">B</span>
             <span className="text-lg font-bold text-white whitespace-nowrap">Beardev Bank</span>
           </div>
-          <nav className="flex items-center space-x-2 font-medium overflow-x-auto no-scrollbar whitespace-nowrap text-base">
+          <nav className="flex items-center space-x-2 font-medium overflow-x-auto no-scrollbar whitespace-nowrap text-base mr-16">
             {[
               "Personal",
               "Business",
@@ -226,7 +226,7 @@ const App = () => {
       </div>
       <div className="bg-white border-t border-gray-200">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
-          <div className="flex justify-end w-full">
+          <div className="flex justify-end w-full pr-16">
             <div className="flex items-center space-x-3 text-gray-600 font-medium text-sm overflow-x-auto no-scrollbar whitespace-nowrap">
               {[
                 "Accounts & Deposits",
